@@ -91,7 +91,7 @@ MonoBehaviour:
   m_MinSize: {x: 913, y: 421}
   m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
-  controlID: 106
+  controlID: 118
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 10
+  controlID: 27
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -348,7 +348,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 7efbffff00000000
+    m_ExpandedIDs: 96fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -443,8 +443,7 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders:
-    - Assets
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -455,7 +454,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 1c2a0000
     m_LastClickedID: 10780
-    m_ExpandedIDs: 68290000042a0000242d00008c2d0000e22d0000
+    m_ExpandedIDs: 000000006a290000062a0000262d00008e2d0000e42d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,7 +482,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000068290000042a0000242d00008c2d0000e22d0000
+    m_ExpandedIDs: 000000006a290000062a0000262d00008e2d0000e42d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,14 +642,14 @@ MonoBehaviour:
     height: 382
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 20065.236773234752
+  lastFramingTime: 330.44343634851293
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.79582, y: 12.816034, z: -1.6018258}
+    m_Target: {x: 2.3971114, y: 1.3083894, z: 3.4459846}
     speed: 2
-    m_Value: {x: 11.79582, y: 12.816034, z: -1.6018258}
+    m_Value: {x: 2.3971114, y: 1.3083894, z: 3.4459846}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -674,13 +673,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.3261565, y: 0.56995153, z: -0.2629963, w: -0.70683104}
+    m_Target: {x: -0.21289673, y: 0.050396554, z: -0.010994668, w: -0.9757122}
     speed: 2
-    m_Value: {x: -0.32615653, y: 0.5699516, z: -0.26299632, w: -0.7068311}
+    m_Value: {x: -0.21289673, y: 0.050396554, z: -0.010994668, w: -0.9757122}
   m_Size:
-    m_Target: 15.529694
+    m_Target: 10.181203
     speed: 2
-    m_Value: 15.529694
+    m_Value: 10.181203
   m_Ortho:
     m_Target: 0
     speed: 2
