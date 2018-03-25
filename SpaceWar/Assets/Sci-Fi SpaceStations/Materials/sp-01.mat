@@ -9,7 +9,7 @@ Material:
   m_Name: sp-01
   m_Shader: {fileID: 13, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -27,10 +27,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 46f9e3c6da937054cace1d575f2bbcfb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8437ee0a6c9dd254bb0f9113db6c0457, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Emission: 1
     - _EmissionLM: 0
     - _Shininess: 0.341283
     m_Colors:
