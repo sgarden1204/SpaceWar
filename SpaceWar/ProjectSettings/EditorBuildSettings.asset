@@ -4,4 +4,34 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MyScenes/Main.unity
+    guid: 454ac1fb4de7236458cc21be30b433cc
+  - enabled: 1
+    path: Assets/MyScenes/Sysnopsis.unity
+    guid: 0d1a0adb94acfe447bae74c68cf330e7
+  - enabled: 1
+    path: Assets/MyScenes/Tutorial.unity
+    guid: 48834d1814347c842ad52298c1e41cba
+  - enabled: 1
+    path: Assets/MyScenes/Stage1.unity
+    guid: 64a5917c85585bd439f74ce547d4213f
+  - enabled: 1
+    path: Assets/MyScenes/Stage2.unity
+    guid: fa3df306fb358774399e3c0477b4f493
+  - enabled: 1
+    path: Assets/MyScenes/Stage3.unity
+    guid: 8c82bbdd09671324796b7f651e1bda04
+  - enabled: 1
+    path: Assets/MyScenes/Stage4.unity
+    guid: c743546c41d5f5241833ad5f573f5ea5
+  - enabled: 1
+    path: Assets/MyScenes/GameOver.unity
+    guid: bb0f1e825155ef743ad416bb978407a6
+  - enabled: 1
+    path: Assets/MyScenes/Victory.unity
+    guid: ae49635b8266b7147969af9328cc53a9
+  - enabled: 1
+    path: Assets/MyScenes/Result.unity
+    guid: 5d997fdf4310fe3438c6e9151d9e0372
