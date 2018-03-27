@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Volume : MonoBehaviour {
 
-    public float volumeOption = 1.0f;
+    public static float volumeOption = 1.0f;
 
 	void Update () {
 

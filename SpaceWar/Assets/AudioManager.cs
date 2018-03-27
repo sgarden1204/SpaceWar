@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour {
+public class AudioManager : MonoBehaviour
+{
 
     static AudioManager audioInstance = null;
+
+    public float setVolume = 0.5f;
 
     public static AudioManager Instance()
     {
@@ -13,7 +16,7 @@ public class AudioManager : MonoBehaviour {
 
     private void Start()
     {
-        if(audioInstance == null)
+        if (audioInstance == null)
         {
             audioInstance = this;
         }
@@ -21,7 +24,7 @@ public class AudioManager : MonoBehaviour {
 
     public void PlayClip(AudioClip clip)
     {
-        GetComponent<AudioSource>().PlayOneShot(clip);
+        GetComponent<AudioSource>().PlayOneShot(clip, setVolume);
     }
 
     public void StopClip(AudioClip clip)
