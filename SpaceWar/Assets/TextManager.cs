@@ -2,82 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextManager : MonoBehaviour {
 
-    public Text[] text = new Text[10];
+    public Text[] text = new Text[11];
 
     private int next = 0;
 
+    public Image image;
+    public Sprite[] sprite = new Sprite[2];
+
 	// Use this for initialization
 	void Start () {
+
         InvokeRepeating("StartText", 3.0f, 3.0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+        if(next == 10)
+        {
+            if(Input.anyKeyDown)
+            {
+                SceneManager.LoadScene("Tutorial");
+            }
+        }
+
 	}
 
     void StartText()
     {
 
         text[next].gameObject.SetActive(false);
-        text[next + 1].gameObject.SetActive(true);
         next++;
+        text[next].gameObject.SetActive(true);
 
-        if(next == 10)
+        switch(next)
         {
-            CancelInvoke();
+            case 2:
+
+                image.sprite = sprite[0];
+                break;
+
+            case 5:
+                image.sprite = sprite[1];
+                break;
+
+            case 10:
+                CancelInvoke();
+                break;
+            default:
+                break;
         }
 
-        //switch(next)
-        //{
-        //    case 0:
-        //        next++;
-        //        break;
-
-        //    case 1:
-        //        text[next].gameObject.SetActive(false);
-        //        next++;
-        //        break;
-
-        //    case 2:
-        //        text[next].gameObject.SetActive(false);
-        //        next++;
-        //        break;
-
-        //    case 3:
-        //        text[next].gameObject.SetActive(false);
-        //        next++;
-        //        break;
-
-        //    case 4:
-
-        //        break;
-
-        //    case 5:
-
-        //        break;
-
-        //    case 6:
-
-        //        break;
-
-        //    case 7:
-
-        //        break;
-
-        //    case 8:
-
-        //        break;
-
-        //    case 9:
-
-        //        break;
-
-        //    default:
-        //        break;
-        //}
     }
 }

@@ -5,17 +5,10 @@ using UnityEngine.UI;
 
 public class SysnopsisManager : MonoBehaviour {
 
-    public Text[] text = new Text[10];
+    public AudioClip clip;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-        //text[0].gameObject.SetActive(false);
-
-	}
+    private void Start()
+    {
+        AudioManager.Instance().PlayClip(clip);
+    }
 }

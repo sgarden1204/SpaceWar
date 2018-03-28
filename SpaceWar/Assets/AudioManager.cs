@@ -5,20 +5,26 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
 
-    static AudioManager audioInstance = null;
+    public static AudioManager audioInstance = null;
 
     public float setVolume = 0.5f;
 
     public static AudioManager Instance()
-    {
+    { 
         return audioInstance;
     }
 
     private void Start()
     {
-        if (audioInstance == null)
+        if (audioInstance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        
+        else
         {
             audioInstance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
     }
 
