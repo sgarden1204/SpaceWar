@@ -14,7 +14,7 @@ public class TutorialText : MonoBehaviour {
     public Transform panel;
 
 	void Start () {
-        InvokeRepeating("StartText", 3.0f, 3.0f);
+        InvokeRepeating("StartText", 2.5f, 2.5f);
     }
 	
 	void Update () {
@@ -34,7 +34,7 @@ public class TutorialText : MonoBehaviour {
                 image.sprite = sprite;
                 break;
 
-            case 12:
+            case 14:
                 panel.gameObject.SetActive(false);
                 CancelInvoke();
                 break;

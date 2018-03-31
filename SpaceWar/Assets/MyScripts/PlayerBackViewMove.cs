@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerBackViewMove : MonoBehaviour {
 
     public float moveSpeed = 20.0f;
+    public float controllMoveSpeed = 20.0f;
 
     CharacterController controller;
     Vector3 move;
@@ -22,7 +23,7 @@ public class PlayerBackViewMove : MonoBehaviour {
         float ver = Input.GetAxis("Vertical");
         float hor = Input.GetAxis("Horizontal");
 
-        move = new Vector3(hor * moveSpeed, ver * moveSpeed, moveSpeed);
+        move = new Vector3(hor * controllMoveSpeed, ver * controllMoveSpeed, moveSpeed);
 
         controller.Move(move * Time.deltaTime);
 	}
