@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
-
-    public static UIManager uiInstatnce = null;
 
     private bool active = false;
 
@@ -13,23 +12,9 @@ public class UIManager : MonoBehaviour {
 
     Slider volumeSlider;
 
-    public static UIManager Instance()
-    {
-        return uiInstatnce;
-    }
-
     private void Start()
     {
-        if(uiInstatnce != null)
-        {
-            Destroy(this.gameObject);
-        }
 
-        else
-        {
-            uiInstatnce = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
     }
 
     private void Update()
@@ -61,5 +46,10 @@ public class UIManager : MonoBehaviour {
     {
         volumeSlider = GameObject.Find("Volume Slider").GetComponent<Slider>();
         Volume.volumeOption = volumeSlider.value;
+    }
+
+    public void ReturnTitle()
+    {
+        SceneManager.LoadScene("Main");
     }
 }

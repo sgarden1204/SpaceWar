@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyScenes/Result.unity
     guid: 5d997fdf4310fe3438c6e9151d9e0372
+  - enabled: 1
+    path: Assets/MyScenes/InfiniteMode.unity
+    guid: a9b03c6c604776946af6f1a204ec4914

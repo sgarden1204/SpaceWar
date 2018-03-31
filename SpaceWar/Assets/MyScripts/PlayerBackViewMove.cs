@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerBackViewMove : MonoBehaviour {
 
-    public float moveSpeed = 5.0f;
+    public float moveSpeed = 20.0f;
 
     CharacterController controller;
     Vector3 move;
+
+    //public static move
 
 	// Use this for initialization
 	void Start () {

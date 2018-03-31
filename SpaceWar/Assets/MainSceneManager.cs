@@ -25,6 +25,6 @@ public class MainSceneManager : MonoBehaviour
 
     public void StartModeGame()
     {
-        //SceneManager.LoadScene();
+        SceneManager.LoadScene("InfiniteMode");
     }
 }
