@@ -4,10 +4,28 @@ using UnityEngine;
 
 public class DestroyAsteroid : MonoBehaviour {
 
+    public float life = 100.0f;
+
+    private AudioSource audioDestroy;
+
+    private void Start()
+    {
+        audioDestroy = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Hit Trigger!");
+        Debug.Log(life);
 
-        Destroy(this.gameObject);
+        life -= 20.0f;
+
+        if(life <= 0)
+        {
+            audioDestroy.Play();
+
+            Debug.Log("Hit Trigger!");
+
+            Destroy(this.gameObject,audioDestroy.clip.length);
+        }
     }
 }

@@ -1011,7 +1011,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4478486275249112, guid: 60153fc10e0d8bd40bf6d7cc02cc99b4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3904
+      value: -8973
       objectReference: {fileID: 0}
     - target: {fileID: 4478486275249112, guid: 60153fc10e0d8bd40bf6d7cc02cc99b4, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1019,7 +1019,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4478486275249112, guid: 60153fc10e0d8bd40bf6d7cc02cc99b4, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -15930
+      value: -13260
       objectReference: {fileID: 0}
     - target: {fileID: 4478486275249112, guid: 60153fc10e0d8bd40bf6d7cc02cc99b4, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1043,15 +1043,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4478486275249112, guid: 60153fc10e0d8bd40bf6d7cc02cc99b4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 139.09656
+      value: 193.34422
       objectReference: {fileID: 0}
     - target: {fileID: 4478486275249112, guid: 60153fc10e0d8bd40bf6d7cc02cc99b4, type: 2}
       propertyPath: m_LocalScale.y
-      value: 139.09653
+      value: 193.34418
       objectReference: {fileID: 0}
     - target: {fileID: 4478486275249112, guid: 60153fc10e0d8bd40bf6d7cc02cc99b4, type: 2}
       propertyPath: m_LocalScale.z
-      value: 139.09653
+      value: 193.34418
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60153fc10e0d8bd40bf6d7cc02cc99b4, type: 2}
@@ -4525,6 +4525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 500
   controllMoveSpeed: 2000
+  shild: {fileID: 1695635768}
 --- !u!143 &1487204066
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4957,8 +4958,88 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 9.864646
+  m_Radius: 11.37
   m_Center: {x: -0.0000019073486, y: 0, z: 0}
+--- !u!82 &1591702105
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1591702103}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 14d9c1f2d6cf3ff4db1ec9b5ae9f1c6a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!54 &1591702108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4974,6 +5055,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1591702110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1591702103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb222d41564a6fe43bee18f36c7415be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 100
 --- !u!1 &1616868328
 GameObject:
   m_ObjectHideFlags: 0
@@ -5375,9 +5468,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 100
+  m_WholeNumbers: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -5437,6 +5530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 500
   controllMoveSpeed: 2000
+  shild: {fileID: 1695635768}
 --- !u!143 &1724617666
 CharacterController:
   m_ObjectHideFlags: 0

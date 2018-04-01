@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerBackViewMove : MonoBehaviour {
 
     public float moveSpeed = 20.0f;
     public float controllMoveSpeed = 20.0f;
+
+    public Slider shild;
 
     CharacterController controller;
     Vector3 move;
@@ -32,4 +36,14 @@ public class PlayerBackViewMove : MonoBehaviour {
             this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0.0f);
         }
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        shild.value -= 10;
+
+        if(shild.value <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
 }
