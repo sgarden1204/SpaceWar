@@ -33,7 +33,7 @@ public class PlayerBackViewMove : MonoBehaviour {
 
         if(Input.GetKeyDown(KeyCode.Alpha9))
         {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0.0f);
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 10000.0f);
         }
 	}
 
