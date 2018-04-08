@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SysnopsisSceneManager : MonoBehaviour {
 
@@ -10,5 +11,10 @@ public class SysnopsisSceneManager : MonoBehaviour {
     private void Start()
     {
         AudioManager.Instance().PlayClip(clip);
+    }
+
+    public void SysnopsisSkip()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 }

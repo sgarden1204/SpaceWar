@@ -7,7 +7,10 @@ public class NextSceneStage1 : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Stage1 Enter!");
-        SceneManager.LoadScene("Stage1");
+        if (other.tag == "Player")
+        {
+            Debug.Log("Stage1 Enter!");
+            SceneManager.LoadScene("Stage1");
+        }
     }
 }

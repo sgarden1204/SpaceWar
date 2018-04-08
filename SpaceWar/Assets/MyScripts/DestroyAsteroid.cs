@@ -6,18 +6,24 @@ public class DestroyAsteroid : MonoBehaviour {
 
     public float life = 100.0f;
 
+    public GameObject explosion;
+
     private AudioSource audioDestroy;
+    private GameObject exp;
+
+    public float lifetime = 1.5f;
 
     private void Start()
     {
         audioDestroy = GetComponent<AudioSource>();
+        exp = explosion;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(life);
 
-        life -= 20.0f;
+        life -= 20;
 
         if(life <= 0)
         {
@@ -25,7 +31,12 @@ public class DestroyAsteroid : MonoBehaviour {
 
             Debug.Log("Hit Trigger!");
 
-            Destroy(this.gameObject,audioDestroy.clip.length);
+
+            exp =  Instantiate(explosion, transform.position, transform.rotation);
+            exp.transform.position = this.transform.position;
+
+            Destroy(this.gameObject, lifetime);
+            //Destroy(this.gameObject,audioDestroy.clip.length);
         }
     }
 }
