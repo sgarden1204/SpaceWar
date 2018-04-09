@@ -135,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23558886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -17377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 446661955}
@@ -2431,8 +2431,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 446661954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -187, y: -5806.3, z: -5932}
-  m_LocalScale: {x: 81.319145, y: 81.31913, z: 81.31913}
+  m_LocalPosition: {x: -435, y: -26037, z: -31589}
+  m_LocalScale: {x: 361.83798, y: 361.83743, z: 361.83743}
   m_Children:
   - {fileID: 623432911}
   - {fileID: 1020323761}
@@ -4206,7 +4206,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1493188431
+  randomSeed: 356612869
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8762,8 +8762,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1109668501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 850.82, y: -548.15, z: -263.29}
-  m_LocalScale: {x: 6.412723, y: 6.412728, z: 6.412728}
+  m_LocalPosition: {x: 1061.2, y: -817.32, z: -1016}
+  m_LocalScale: {x: 21.886988, y: 21.88702, z: 21.88702}
   m_Children:
   - {fileID: 680958936}
   - {fileID: 2042208904}
@@ -9427,7 +9427,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1292965741
+  randomSeed: 695284693
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -18097,7 +18097,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -896159089
+  randomSeed: 771388848
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -23084,8 +23084,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2037559302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -142.37, y: -104, z: -1002.4}
-  m_LocalScale: {x: 11.504804, y: 11.50482, z: 11.50482}
+  m_LocalPosition: {x: -1114, y: -3337, z: -1821}
+  m_LocalScale: {x: 41.519066, y: 41.519096, z: 41.519096}
   m_Children:
   - {fileID: 1882527537}
   - {fileID: 604610608}

@@ -17,8 +17,9 @@ public class PlayerBackViewFire : MonoBehaviour {
 
     private float nextFire;
     private int changeWeapon = 0;
-    private GameObject go;
-    private GameObject [] misile = new GameObject[4];
+    private GameObject myLaser;
+    private GameObject [] myMisile = new GameObject[4];
+    private GameObject[] myLaserBeam = new GameObject[2];
 
 
     private void Update()
@@ -39,28 +40,30 @@ public class PlayerBackViewFire : MonoBehaviour {
             {
                 case 0:
                     nextFire = Time.time + fireRate;
-                    misile[0] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                    misile[0].transform.position = new Vector3(shotSpawn.position.x- 25.0f, shotSpawn.position.y +1.0f, shotSpawn.position.z + 200.0f);
-                    misile[1] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                    misile[1].transform.position = new Vector3(shotSpawn.position.x + 25.0f, shotSpawn.position.y + 1.0f, shotSpawn.position.z + 200.0f);
-                    misile[2] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                    misile[2].transform.position = new Vector3(shotSpawn.position.x - 25.0f, shotSpawn.position.y - 40.0f, shotSpawn.position.z + 200.0f);
-                    misile[3] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                    misile[3].transform.position = new Vector3(shotSpawn.position.x + 25.0f, shotSpawn.position.y - 40.0f, shotSpawn.position.z + 200.0f);
+                    myMisile[0] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    myMisile[0].transform.position = new Vector3(shotSpawn.position.x- 25.0f, shotSpawn.position.y +1.0f, shotSpawn.position.z + 200.0f);
+                    myMisile[1] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    myMisile[1].transform.position = new Vector3(shotSpawn.position.x + 25.0f, shotSpawn.position.y + 1.0f, shotSpawn.position.z + 200.0f);
+                    myMisile[2] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    myMisile[2].transform.position = new Vector3(shotSpawn.position.x - 25.0f, shotSpawn.position.y - 40.0f, shotSpawn.position.z + 200.0f);
+                    myMisile[3] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    myMisile[3].transform.position = new Vector3(shotSpawn.position.x + 25.0f, shotSpawn.position.y - 40.0f, shotSpawn.position.z + 200.0f);
                     GetComponent<AudioSource>().PlayOneShot(missileSound, 0.5f);
                     break;
 
                 case 1:
                     nextFire = Time.time + fireRate;
-                    go = Instantiate(laser, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                    go.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y + 1.0f, shotSpawn.position.z + 50.0f);
+                    myLaser = Instantiate(laser, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    myLaser.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y + 1.0f, shotSpawn.position.z + 50.0f);
                     GetComponent<AudioSource>().PlayOneShot(laserSound, 0.5f);
                     break;
 
                 case 2:
                     nextFire = Time.time + fireRate;
-                    go = Instantiate(machinegun, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                    go.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y + 1.0f, shotSpawn.position.z + 100.0f);
+                    myLaserBeam[0] = Instantiate(machinegun, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    myLaserBeam[0].transform.position = new Vector3(shotSpawn.position.x + 550.0f, shotSpawn.position.y + 1.0f, shotSpawn.position.z + 500.0f);
+                    myLaserBeam[1] = Instantiate(machinegun, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    myLaserBeam[1].transform.position = new Vector3(shotSpawn.position.x - 550.0f, shotSpawn.position.y + 1.0f, shotSpawn.position.z + 500.0f);
                     GetComponent<AudioSource>().PlayOneShot(machinegunSound, 0.5f);
                     break;
             }
