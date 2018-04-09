@@ -39,11 +39,15 @@ public class PlayerBackViewMove : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        shild.value -= 10;
 
-        if(shild.value <= 0)
+        if(other.tag == "asteroid" || other.tag == "enemybullet")
         {
-            SceneManager.LoadScene("GameOver");
+            shild.value -= 10;
+
+            if (shild.value <= 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
         }
     }
 }

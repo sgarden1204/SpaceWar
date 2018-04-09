@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FirstPersonCamera : MonoBehaviour {
 
-    public Transform playerPos;
+    public GameObject targetPlayerPos;
 
-    public float moveSpeed = 20.0f;
-    public float controllMoveSpeed = 20.0f;
+    public float cameraMoveSpeed = 20.0f;
+    public float cameraControllMoveSpeed = 20.0f;
 
-    private Vector3 move;
+    private Vector3 cameraMove;
 
     private void Start()
     {
@@ -20,15 +20,15 @@ public class FirstPersonCamera : MonoBehaviour {
 
         //this.transform.Translate(0.0f, 0.0f, 20.0f * Time.deltaTime);
 
-        this.transform.position = playerPos.position;
-        this.transform.position = new Vector3(playerPos.position.x, playerPos.position.y + 5.0f, playerPos.position.z - 3.0f);
+        this.transform.position = targetPlayerPos.transform.position;
+        //this.transform.position = new Vector3(targetPlayerPos.transform.position.x, targetPlayerPos.transform.position.y + 5.0f, targetPlayerPos.transform.position.z - 3.0f);
 
         float ver = Input.GetAxis("Vertical");
         float hor = Input.GetAxis("Horizontal");
 
-        move = new Vector3(hor * controllMoveSpeed, ver * controllMoveSpeed, moveSpeed);
+        cameraMove = new Vector3(hor * cameraControllMoveSpeed, ver * cameraControllMoveSpeed, cameraMoveSpeed);
 
-        this.transform.Translate(move * Time.deltaTime);
+        this.transform.Translate(cameraMove * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Alpha9))
         {
