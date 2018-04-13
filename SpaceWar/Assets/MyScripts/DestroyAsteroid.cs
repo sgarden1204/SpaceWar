@@ -11,6 +11,7 @@ public class DestroyAsteroid : MonoBehaviour {
     private AudioSource audioDestroy;
     private GameObject exp;
 
+
     public float lifetime = 1.5f;
 
     private void Start()
@@ -34,6 +35,8 @@ public class DestroyAsteroid : MonoBehaviour {
 
             exp =  Instantiate(explosion, transform.position, transform.rotation);
             exp.transform.position = this.transform.position;
+
+            ScoreManager.score += Random.Range(1,200);
 
             Destroy(this.gameObject, lifetime);
             //Destroy(this.gameObject,audioDestroy.clip.length);
