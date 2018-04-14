@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerSideViewMove : MonoBehaviour {
 
     public float moveSpeed = 10.0f;
+    public float moveZ = 100.0f;
 
     CharacterController player;
 
@@ -21,7 +22,7 @@ public class PlayerSideViewMove : MonoBehaviour {
         float ver = Input.GetAxis("Vertical");
         float hor = Input.GetAxis("Horizontal");
 
-        move = new Vector3(0.0f, ver * moveSpeed, hor * moveSpeed);
+        move = new Vector3(moveZ, ver * moveSpeed, hor * moveSpeed);
 
         player.Move(move * Time.deltaTime);
 	}

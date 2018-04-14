@@ -8,6 +8,7 @@ TagManager:
   - PlayerPos
   - asteroid
   - enemybullet
+  - NextStage
   layers:
   - Default
   - TransparentFX

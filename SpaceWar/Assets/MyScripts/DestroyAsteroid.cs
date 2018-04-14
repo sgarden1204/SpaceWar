@@ -24,22 +24,25 @@ public class DestroyAsteroid : MonoBehaviour {
     {
         Debug.Log(life);
 
-        life -= 20;
-
-        if(life <= 0)
+        if(other.tag == "PlayerMissile")
         {
-            audioDestroy.Play();
+            life -= 20;
 
-            Debug.Log("Hit Trigger!");
+            if (life <= 0)
+            {
+                audioDestroy.Play();
+
+                Debug.Log("Hit Trigger!");
 
 
-            exp =  Instantiate(explosion, transform.position, transform.rotation);
-            exp.transform.position = this.transform.position;
+                exp = Instantiate(explosion, transform.position, transform.rotation);
+                exp.transform.position = this.transform.position;
 
-            ScoreManager.score += Random.Range(1,200);
+                ScoreManager.score += Random.Range(1, 200);
 
-            Destroy(this.gameObject, lifetime);
-            //Destroy(this.gameObject,audioDestroy.clip.length);
+                Destroy(this.gameObject, lifetime);
+                //Destroy(this.gameObject,audioDestroy.clip.length);
+            }
         }
     }
 }

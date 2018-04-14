@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/MyScenes/Tutorial.unity
     guid: 48834d1814347c842ad52298c1e41cba
   - enabled: 1
-    path: Assets/MyScenes/Stage1.unity
+    path: Assets/MyScenes/Stage2.unity
     guid: 64a5917c85585bd439f74ce547d4213f
   - enabled: 1
-    path: Assets/MyScenes/Stage2.unity
+    path: Assets/MyScenes/Stage1.unity
     guid: fa3df306fb358774399e3c0477b4f493
   - enabled: 1
     path: Assets/MyScenes/Stage3.unity
@@ -38,3 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyScenes/InfiniteMode.unity
     guid: a9b03c6c604776946af6f1a204ec4914
+  - enabled: 1
+    path: Assets/MyScenes/TutorialTest.unity
+    guid: 6202d0d867f12ce42b5e0dab8c048ef0

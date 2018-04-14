@@ -49,5 +49,10 @@ public class PlayerBackViewMove : MonoBehaviour {
                 SceneManager.LoadScene("GameOver");
             }
         }
+
+        if(other.tag == "NextStage")
+        {
+            SceneManager.LoadScene("Stage2");
+        }
     }
 }
