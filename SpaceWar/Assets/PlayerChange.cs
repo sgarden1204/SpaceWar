@@ -15,11 +15,20 @@ public class PlayerChange : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-        if(Input.GetKeyUp(KeyCode.Alpha1))
-        {
-            Player[changePlane].gameObject.SetActive(false);
-            Player[changePlane+1].gameObject.SetActive(true);
-            changePlane++;
-        }
+
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Gear")
+        {
+            if(changePlane == 0 || changePlane == 1)
+            {
+                Player[changePlane].gameObject.SetActive(false);
+                Player[changePlane + 1].gameObject.SetActive(true);
+                changePlane++;
+                Debug.Log("진화!" + changePlane);
+            }
+        }
+    }
 }
