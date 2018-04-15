@@ -19,9 +19,9 @@ public class SideCamera : MonoBehaviour {
 
         myCamera.transform.position = playerPos.transform.position;
 
-        myCamera.transform.position = new Vector3(myCamera.transform.position.x + distance, myCamera.transform.position.y, myCamera.transform.position.z);
+        myCamera.transform.position = new Vector3(myCamera.transform.position.x + distance, myCamera.transform.position.y, myCamera.transform.position.z + 8.0f);
         //myCamera.transform.eulerAngles = new Vector3(0.0f, 90.0f, 0.0f);
 
-        myCamera.transform.LookAt(playerPos);
+        //myCamera.transform.LookAt(playerPos);
 	}
 }

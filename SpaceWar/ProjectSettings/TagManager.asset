@@ -9,6 +9,8 @@ TagManager:
   - asteroid
   - enemybullet
   - NextStage
+  - Wall
+  - Enemy
   layers:
   - Default
   - TransparentFX
