@@ -26,7 +26,7 @@ public class SysnopsisText : MonoBehaviour {
         {
             if(Input.anyKeyDown)
             {
-                SceneManager.LoadScene("Tutorial");
+                SceneManager.LoadScene("TutorialUI");
             }
         }
 

@@ -13,15 +13,15 @@ public class MissileBoom : MonoBehaviour {
 
     private void Update()
     {
-        if(Vector3.Distance(this.transform.position, playerpos.transform.position) >= 1000.0f)
-        {
-            Destroy(this.gameObject);
-        }
+        //if(Vector3.Distance(this.transform.position, playerpos.transform.position) >= 1000.0f)
+        //{
+        //    Destroy(this.gameObject);
+        //}
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Enemy" || other.tag == "Wall")
+        if(other.tag == "Enemy" || other.tag == "Wall" || other.tag == "asteroid")
         {
             Destroy(this.gameObject);
         }

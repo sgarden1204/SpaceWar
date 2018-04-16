@@ -15,6 +15,6 @@ public class SysnopsisSceneManager : MonoBehaviour {
 
     public void SysnopsisSkip()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("TutorialUI");
     }
 }

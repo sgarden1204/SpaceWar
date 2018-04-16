@@ -12,6 +12,9 @@ TagManager:
   - Wall
   - Enemy
   - Gear
+  - TestBeam
+  - TestLaser
+  - TestMissile
   layers:
   - Default
   - TransparentFX

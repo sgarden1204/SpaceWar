@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class TutorialSceneManager : MonoBehaviour {
 
+    public static int goalCount = 0;
+
     public AudioClip clip;
 
     public Image bulletImg;
