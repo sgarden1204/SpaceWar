@@ -13,6 +13,8 @@ public class Stage3Manager : MonoBehaviour
     public Sprite missile;
     public Sprite machinegun;
 
+    public Image[] imgPowerUp = new Image[3];
+
     private int weaponChange = 0;
 
     // Use this for initialization
@@ -48,6 +50,28 @@ public class Stage3Manager : MonoBehaviour
                     weaponChange = 0;
                     break;
             }
+        }
+
+        switch(TopViewPlayerFire.powerUpCount)
+        {
+            case 0:
+
+                break;
+
+            case 1:
+                imgPowerUp[0].gameObject.SetActive(true);
+                break;
+
+            case 2:
+                imgPowerUp[1].gameObject.SetActive(true);
+                break;
+
+            case 3:
+                imgPowerUp[2].gameObject.SetActive(true);
+                break;
+
+            default:
+                break;
         }
     }
 }

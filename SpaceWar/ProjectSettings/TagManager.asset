@@ -6,7 +6,6 @@ TagManager:
   tags:
   - PlayerMissile
   - PlayerPos
-  - asteroid
   - enemybullet
   - NextStage
   - Wall
@@ -19,6 +18,9 @@ TagManager:
   - LaserBeam
   - Missile
   - ResetWall
+  - ItemPowerUp
+  - Mine
+  - Asteroid
   layers:
   - Default
   - TransparentFX

@@ -5,10 +5,14 @@ using UnityEngine.UI;
 
 public class TopViewPlayerFire : MonoBehaviour
 {
+    public static int powerUpCount;
 
     public GameObject laserBeam;
     public GameObject missile;
-    public GameObject laser;
+
+    public GameObject laserV1;
+    public GameObject laserV2;
+    public GameObject laserV3;
 
     public AudioClip laserSound;
     public AudioClip missileSound;
@@ -21,9 +25,31 @@ public class TopViewPlayerFire : MonoBehaviour
 
     private float nextFire;
     private int changeWeapon = 0;
-    private GameObject myLaser;
+
+    private GameObject myLaser1;
+    private GameObject myLaser2;
+    private GameObject myLaser3;
+
     private GameObject[] myMisile = new GameObject[4];
+
+    private GameObject[] myMisileVersion2Left = new GameObject[4];
+    private GameObject[] myMisileVersion2Right = new GameObject[4];
+
+    private GameObject[] myMisileVersion3Left = new GameObject[4];
+    private GameObject[] myMisileVersion3Right = new GameObject[4];
+
     private GameObject[] myLaserBeam = new GameObject[2];
+
+    private GameObject[] myLaserBeamVersion2Left = new GameObject[2];
+    private GameObject[] myLaserBeamVersion2Right = new GameObject[2];
+    private GameObject[] myLaserBeamVersion2MidLeft = new GameObject[2];
+    private GameObject[] myLaserBeamVersion2MidRight = new GameObject[2];
+
+    private GameObject[] myLaserBeamVersion3Left = new GameObject[2];
+    private GameObject[] myLaserBeamVersion3Right = new GameObject[2];
+    private GameObject[] myLaserBeamVersion3MidLeft = new GameObject[2];
+    private GameObject[] myLaserBeamVersion3MidRight = new GameObject[2];
+
 
     private void Update()
     {
@@ -38,6 +64,9 @@ public class TopViewPlayerFire : MonoBehaviour
         }
 
 
+        if (powerUpCount == 1)
+            fireRate = 0.2f;
+
         lc.value++;
         if (Input.GetKey(KeyCode.Z) && Time.time > nextFire)
         {
@@ -46,6 +75,7 @@ public class TopViewPlayerFire : MonoBehaviour
                 case 0:
                     lc.value += 20;
                     nextFire = Time.time + fireRate;
+
                     myMisile[0] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
                     myMisile[0].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 3.0f);
                     myMisile[1] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
@@ -54,30 +84,179 @@ public class TopViewPlayerFire : MonoBehaviour
                     myMisile[2].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 3.0f);
                     myMisile[3] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
                     myMisile[3].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 3.0f);
+
+                    if(powerUpCount >= 2)
+                    {
+                        myMisileVersion2Left[0] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion2Left[0].transform.position = new Vector3(shotSpawn.position.x - 1.0f, shotSpawn.position.y, shotSpawn.position.z + 2.0f);
+                        myMisileVersion2Left[1] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion2Left[1].transform.position = new Vector3(shotSpawn.position.x - 1.0f, shotSpawn.position.y, shotSpawn.position.z + 2.0f);
+                        myMisileVersion2Left[2] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion2Left[2].transform.position = new Vector3(shotSpawn.position.x - 1.0f, shotSpawn.position.y, shotSpawn.position.z + 2.0f);
+                        myMisileVersion2Left[3] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion2Left[3].transform.position = new Vector3(shotSpawn.position.x - 1.0f, shotSpawn.position.y, shotSpawn.position.z + 2.0f);
+
+                        myMisileVersion2Right[0] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion2Right[0].transform.position = new Vector3(shotSpawn.position.x + 1.0f, shotSpawn.position.y, shotSpawn.position.z + 2.0f);
+                        myMisileVersion2Right[1] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion2Right[1].transform.position = new Vector3(shotSpawn.position.x + 1.0f, shotSpawn.position.y, shotSpawn.position.z + 2.0f);
+                        myMisileVersion2Right[2] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion2Right[2].transform.position = new Vector3(shotSpawn.position.x + 1.0f, shotSpawn.position.y, shotSpawn.position.z + 2.0f);
+                        myMisileVersion2Right[3] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion2Right[3].transform.position = new Vector3(shotSpawn.position.x + 1.0f, shotSpawn.position.y, shotSpawn.position.z + 2.0f);
+                    }
+
+                    if (powerUpCount >= 3)
+                    {
+                        myMisileVersion3Left[0] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion3Left[0].transform.position = new Vector3(shotSpawn.position.x - 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.0f);
+                        myMisileVersion3Left[1] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion3Left[1].transform.position = new Vector3(shotSpawn.position.x - 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.0f);
+                        myMisileVersion3Left[2] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion3Left[2].transform.position = new Vector3(shotSpawn.position.x - 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.0f);
+                        myMisileVersion3Left[3] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion3Left[3].transform.position = new Vector3(shotSpawn.position.x - 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.0f);
+
+                        myMisileVersion3Right[0] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion3Right[0].transform.position = new Vector3(shotSpawn.position.x + 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.0f);
+                        myMisileVersion3Right[1] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion3Right[1].transform.position = new Vector3(shotSpawn.position.x + 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.0f);
+                        myMisileVersion3Right[2] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion3Right[2].transform.position = new Vector3(shotSpawn.position.x + 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.0f);
+                        myMisileVersion3Right[3] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myMisileVersion3Right[3].transform.position = new Vector3(shotSpawn.position.x + 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.0f);
+
+                    }
+
+
+
                     GetComponent<AudioSource>().PlayOneShot(missileSound, 0.5f);
                     break;
 
                 case 1:
-                    if (lc.value > 0)
+                    if (lc.value > 100)
                     {
                         nextFire = Time.time + fireRate;
-                        myLaser = Instantiate(laser, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                        myLaser.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 0.5f);
+
+                        if(powerUpCount == 1)
+                        {
+                            myLaser1 = Instantiate(laserV1, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                            myLaser1.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 0.5f);
+                        }
+
+                        if (powerUpCount == 2)
+                        {
+                            myLaser2 = Instantiate(laserV2, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                            myLaser2.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 0.5f);
+                        }
+
+                        if (powerUpCount >= 3)
+                        {
+                            myLaser3 = Instantiate(laserV3, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                            myLaser3.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z - 5.0f);
+                        }
+
+
                         GetComponent<AudioSource>().PlayOneShot(laserSound, 0.5f);
                         lc.value -= 100;
-                        Debug.Log(lc.value);
                     }
                     break;
 
                 case 2:
                     nextFire = Time.time + fireRate;
-                    myLaserBeam[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                    myLaserBeam[0].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
-                    myLaserBeam[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                    myLaserBeam[1].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+
+                    if (powerUpCount <= 1 || powerUpCount >= 3)
+                    {
+                        myLaserBeam[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeam[0].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeam[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeam[1].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                    }
+
+                    if (powerUpCount == 2)
+                    {
+                        myLaserBeamVersion2MidLeft[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2MidLeft[0].transform.position = new Vector3(shotSpawn.position.x -0.5f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2MidLeft[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2MidLeft[1].transform.position = new Vector3(shotSpawn.position.x -0.5f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+
+                        myLaserBeamVersion2MidRight[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2MidRight[0].transform.position = new Vector3(shotSpawn.position.x +0.5f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2MidRight[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2MidRight[1].transform.position = new Vector3(shotSpawn.position.x +0.5f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+
+                        myLaserBeamVersion2Left[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2Left[0].transform.position = new Vector3(shotSpawn.position.x -2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2Left[0].transform.eulerAngles = new Vector3(0.0f, 30.0f, 0.0f);
+                        myLaserBeamVersion2Left[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2Left[1].transform.position = new Vector3(shotSpawn.position.x -2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2Left[1].transform.eulerAngles = new Vector3(0.0f, 30.0f, 0.0f);
+
+                        myLaserBeamVersion2Right[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2Right[0].transform.position = new Vector3(shotSpawn.position.x +2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2Right[0].transform.eulerAngles = new Vector3(0.0f, -30.0f, 0.0f);
+                        myLaserBeamVersion2Right[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2Right[1].transform.position = new Vector3(shotSpawn.position.x +2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2Right[1].transform.eulerAngles = new Vector3(0.0f, -30.0f, 0.0f);
+                    }
+
+                    if (powerUpCount >= 3)
+                    {
+
+                        myLaserBeamVersion2Left[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2Left[0].transform.position = new Vector3(shotSpawn.position.x - 1.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2Left[0].transform.eulerAngles = new Vector3(0.0f, 30.0f, 0.0f);
+                        myLaserBeamVersion2Left[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2Left[1].transform.position = new Vector3(shotSpawn.position.x - 1.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2Left[1].transform.eulerAngles = new Vector3(0.0f, 30.0f, 0.0f);
+
+                        myLaserBeamVersion2Right[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2Right[0].transform.position = new Vector3(shotSpawn.position.x + 1.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2Right[0].transform.eulerAngles = new Vector3(0.0f, -30.0f, 0.0f);
+                        myLaserBeamVersion2Right[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion2Right[1].transform.position = new Vector3(shotSpawn.position.x + 1.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion2Right[1].transform.eulerAngles = new Vector3(0.0f, -30.0f, 0.0f);
+
+                        //////////////////////////////////////////////////////////////////////////
+
+                        myLaserBeamVersion3MidLeft[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion3MidLeft[0].transform.position = new Vector3(shotSpawn.position.x - 1.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion3MidLeft[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion3MidLeft[1].transform.position = new Vector3(shotSpawn.position.x - 1.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+
+                        myLaserBeamVersion3MidRight[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion3MidRight[0].transform.position = new Vector3(shotSpawn.position.x + 1.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion3MidRight[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion3MidRight[1].transform.position = new Vector3(shotSpawn.position.x + 1.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+
+                        myLaserBeamVersion3Left[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion3Left[0].transform.position = new Vector3(shotSpawn.position.x - 2.0f , shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion3Left[0].transform.eulerAngles = new Vector3(0.0f, -45.0f, 0.0f);
+                        myLaserBeamVersion3Left[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion3Left[1].transform.position = new Vector3(shotSpawn.position.x - 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion3Left[1].transform.eulerAngles = new Vector3(0.0f, -45.0f, 0.0f);
+
+                        myLaserBeamVersion3Right[0] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion3Right[0].transform.position = new Vector3(shotSpawn.position.x + 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion3Right[0].transform.eulerAngles = new Vector3(0.0f, 45.0f, 0.0f);
+                        myLaserBeamVersion3Right[1] = Instantiate(laserBeam, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                        myLaserBeamVersion3Right[1].transform.position = new Vector3(shotSpawn.position.x + 2.0f, shotSpawn.position.y, shotSpawn.position.z + 1.5f);
+                        myLaserBeamVersion3Right[1].transform.eulerAngles = new Vector3(0.0f, 45.0f, 0.0f);
+                    }
+
+
                     GetComponent<AudioSource>().PlayOneShot(laserBeamSound, 0.5f);
                     break;
             }
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "ItemPowerUp")
+        {
+            powerUpCount++;
         }
     }
 }

@@ -8,7 +8,7 @@ public class TopViewItemShield : MonoBehaviour {
     public Slider sliderShield;
     public float downSpeed = 1.0f;
 
-    float posZ = 50.0f;
+    public float posZ = 50.0f;
     float posX = 0;
     Vector3 vector3DownPos;
 

@@ -31,7 +31,7 @@ public class TopViewPlayerMove : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Wall" || other.tag == "Enemy")
+        if (other.tag == "Asteroid" || other.tag == "Mine")
         {
             shield.value -= 10;
         }
