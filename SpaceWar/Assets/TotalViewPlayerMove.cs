@@ -36,6 +36,16 @@ public class TotalViewPlayerMove : MonoBehaviour {
             moveVector.y = jumpSpeed;
         }
 
+        if(Input.GetKey(KeyCode.Q))
+        {
+            moveVector.y = jumpSpeed;
+        }
+
+        if(Input.GetKey(KeyCode.E))
+        {
+            moveVector.y = -jumpSpeed;
+        }
+
         moveVector.y -= gravity * Time.deltaTime;
 
         controller.Move(moveVector * Time.deltaTime);
