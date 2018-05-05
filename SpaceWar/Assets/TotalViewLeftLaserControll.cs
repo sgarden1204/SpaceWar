@@ -24,7 +24,7 @@ public class TotalViewLeftLaserControll : MonoBehaviour
         start_time = Time.time;
         this.transform.Rotate(0.0f, -90.0f, 0.0f);
 
-        playerPos = GameObject.Find("PlayerPos");
+        playerPos = GameObject.Find("BackPlayerPos");
     }
 
     // Update is called once per frame
