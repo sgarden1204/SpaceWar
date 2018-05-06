@@ -21,6 +21,8 @@ TagManager:
   - ItemPowerUp
   - Mine
   - Asteroid
+  - BackPlayerPos
+  - TopPlayerPos
   layers:
   - Default
   - TransparentFX
