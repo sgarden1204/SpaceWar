@@ -91,7 +91,7 @@ public class TutorialUIText : MonoBehaviour {
                 change.gameObject.SetActive(true);
                 break;
             case 15:
-                //panel.gameObject.SetActive(false);
+                panel.gameObject.SetActive(false);
                 CancelInvoke();
                 break;
             default:

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TutorialSceneManager : MonoBehaviour {
 
@@ -18,7 +19,8 @@ public class TutorialSceneManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        AudioManager.Instance().PlayClip(clip);
+
+        //AudioManager.Instance().PlayClip(clip);
 	}
 	
 	// Update is called once per frame
@@ -43,4 +45,9 @@ public class TutorialSceneManager : MonoBehaviour {
             }
         }
 	}
+
+    public void SkipTutorial()
+    {
+        SceneManager.LoadScene("Stage1");
+    }
 }

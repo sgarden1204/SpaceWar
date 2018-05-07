@@ -1169,6 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftShip: {fileID: 2047651403}
   rightShip: {fileID: 2047404274}
+  text: {fileID: 454969707}
 --- !u!1 &1241574141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,7 +2084,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  Laser: {fileID: 0}
+  Laser: {fileID: 1848590352976214, guid: 0b0ee3392725cb440b25b68166a194e7, type: 2}
+  Lpos: 5
 --- !u!1 &2047651403 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1843889676524860, guid: 21890f86982a2534aa34b649db815c0e,
@@ -2102,6 +2104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   Laser: {fileID: 1848590352976214, guid: 0b0ee3392725cb440b25b68166a194e7, type: 2}
+  Lpos: 5
+  text: {fileID: 454969707}
 --- !u!1001 &2053301552
 Prefab:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23063499738062872}
   - component: {fileID: 136135662724470160}
   - component: {fileID: 114115795353028062}
-  - component: {fileID: 114722949375743548}
+  - component: {fileID: 114054691985104944}
   m_Layer: 0
   m_Name: TestMissile
   m_TagString: TestMissile
@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1870529952793566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 300, y: 300, z: 300}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,6 +85,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1870529952793566}
   m_Mesh: {fileID: 4300008, guid: cc04f9adf553d0f4bae2c711caa36499, type: 3}
+--- !u!114 &114054691985104944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1870529952793566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58db1e9846fd17f42b2d32ee4759f9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114115795353028062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,18 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b871ca0f725754488b0715347f2ee3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2000
---- !u!114 &114722949375743548
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1870529952793566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6c9712de96c28140b83e5a1fe565772, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  moveSpeed: 100
 --- !u!136 &136135662724470160
 CapsuleCollider:
   m_ObjectHideFlags: 1

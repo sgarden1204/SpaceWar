@@ -82252,7 +82252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb222d41564a6fe43bee18f36c7415be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 800
+  life: 400
   explosion: {fileID: 100000, guid: e0dc4d47bced6d54ab1461804114b5d0, type: 2}
   lifetime: 0.5
 --- !u!114 &1591702111

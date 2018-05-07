@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RedAsteroid : MonoBehaviour
 {
+    public Transform button;
+
     public Text goal;
     public Text uiux;
 
@@ -70,7 +73,10 @@ public class RedAsteroid : MonoBehaviour
 
             case 2:
                 TutorialSceneManager.goalCount = 3;
+
+                button.gameObject.SetActive(true);
                 break;
         }
+        button.gameObject.SetActive(true);
     }
 }

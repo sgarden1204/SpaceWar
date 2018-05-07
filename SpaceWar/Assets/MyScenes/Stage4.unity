@@ -6650,7 +6650,7 @@ MonoBehaviour:
   shotSpawn: {fileID: 1410490543}
   clip: {fileID: 8300000, guid: ea908bdb881972049b785905ec61eb94, type: 3}
   delay: 3
-  fireDelay: 30
+  fireDelay: 15
 --- !u!82 &1410490545
 AudioSource:
   m_ObjectHideFlags: 0

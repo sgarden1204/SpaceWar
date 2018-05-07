@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RockAsteroid : MonoBehaviour
 {
+    public Transform button;
+
     public Text goal;
     public Text uiux;
 
@@ -70,7 +73,11 @@ public class RockAsteroid : MonoBehaviour
 
             case 2:
                 TutorialSceneManager.goalCount = 3;
+
                 break;
         }
+
+        button.gameObject.SetActive(true);
+        Debug.Log(TutorialSceneManager.goalCount);
     }
 }

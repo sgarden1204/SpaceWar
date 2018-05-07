@@ -49,8 +49,8 @@ public class TutorialFireandMove : MonoBehaviour
 
             case 7:
                 goal[0].gameObject.SetActive(true);
-                goal[1].gameObject.SetActive(true);
-                goal[2].gameObject.SetActive(true);
+                //goal[1].gameObject.SetActive(true);
+                //goal[2].gameObject.SetActive(true);
                 break;
 
             case 12:
@@ -60,7 +60,7 @@ public class TutorialFireandMove : MonoBehaviour
 
                 break;
 
-            case 15:
+            case 14:
                 panel.gameObject.SetActive(false);
                 CancelInvoke();
                 break;

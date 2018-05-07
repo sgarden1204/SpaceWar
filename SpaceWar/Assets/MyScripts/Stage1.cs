@@ -19,6 +19,7 @@ public class Stage1 : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
+            ScoreManager.Instance().ScoreSave();
             NextScene();
         }
     }

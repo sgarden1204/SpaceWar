@@ -41,4 +41,9 @@ public class ScoreManager : MonoBehaviour {
         scoretext.text = score.ToString("D8");
     }
 
+    public void ScoreSave()
+    {
+        PlayerPrefs.SetInt("score", score);
+    }
+
 }
