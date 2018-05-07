@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour {
 
     public Transform optionPanel;
 
-    Slider volumeSlider;
+    public static Slider volumeSlider;
 
     private void Start()
     {
@@ -19,7 +19,10 @@ public class UIManager : MonoBehaviour {
 
     private void Update()
     {
-        
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            ActiveOption();
+        }
     }
 
     public void ActiveOption()
@@ -27,12 +30,14 @@ public class UIManager : MonoBehaviour {
         if (active)
         {
             optionPanel.gameObject.SetActive(false);
+            Time.timeScale = 1.0f;
             active = false;
         }
 
         else
         {
             optionPanel.gameObject.SetActive(true);
+            Time.timeScale = 0.0f;
             active = true;
         }
     }

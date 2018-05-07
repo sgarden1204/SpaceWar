@@ -36,6 +36,7 @@ public class PlayerSideViewFire : MonoBehaviour {
             }
         }
 
+        lc.value += 1;
 
         if (Input.GetKey(KeyCode.Z) && Time.time > nextFire)
         {
@@ -56,7 +57,7 @@ public class PlayerSideViewFire : MonoBehaviour {
                     break;
 
                 case 1:
-                    if (lc.value > 0)
+                    if (lc.value > 100)
                     {
                         nextFire = Time.time + fireRate;
                         myLaser = Instantiate(laser, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);

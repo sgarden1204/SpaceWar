@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerChange : MonoBehaviour {
 
     public GameObject [] Player = new GameObject[3];
-    private int changePlane = 0;
+    public static int changePlane = 0;
 
 	// Use this for initialization
 	void Start () {

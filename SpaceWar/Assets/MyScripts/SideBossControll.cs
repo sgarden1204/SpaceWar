@@ -57,6 +57,10 @@ public class SideBossControll : MonoBehaviour {
 
         if(bossHp.value <= 0)
         {
+            if(ScoreManager.Instance() != null)
+            {
+                ScoreManager.Instance().ScoreSave();
+            }
             SceneManager.LoadScene("Stage3");
         }
     }

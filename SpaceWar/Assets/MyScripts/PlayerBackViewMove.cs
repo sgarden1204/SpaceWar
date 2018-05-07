@@ -46,7 +46,7 @@ public class PlayerBackViewMove : MonoBehaviour {
 
             if (shild.value <= 0)
             {
-                SceneManager.LoadScene("GameOver");
+                SceneManager.LoadScene("Result");
             }
         }
 

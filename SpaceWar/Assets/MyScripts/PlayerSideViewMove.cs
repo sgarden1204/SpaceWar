@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerSideViewMove : MonoBehaviour {
 
@@ -34,6 +35,11 @@ public class PlayerSideViewMove : MonoBehaviour {
         if(other.tag == "Wall" || other.tag == "Enemy")
         {
             shield.value -= 10;
+
+            if(shield.value <= 0)
+            {
+                SceneManager.LoadScene("Result");
+            }
         }
     }
 }

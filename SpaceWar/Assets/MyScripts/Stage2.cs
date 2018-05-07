@@ -8,7 +8,7 @@ public class Stage2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GetComponent<AudioSource>().PlayOneShot(clip, 0.5f);
+        //GetComponent<AudioSource>().PlayOneShot(clip, 0.5f);
 	}
 	
 	// Update is called once per frame

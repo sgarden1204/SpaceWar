@@ -11,6 +11,11 @@ public class GearUp : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
+            if(PlayerChange.changePlane >= 2)
+            {
+                ScoreManager.score += 5000;
+            }
+
             Destroy(this.gameObject);
         }
     }
