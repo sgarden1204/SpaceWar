@@ -35,10 +35,16 @@ public class TopViewItemLC : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            sliderLC.value += 1000;
-            posZ = Random.Range(100.0f, 500.0f);
+            if(sliderLC.value == sliderLC.maxValue)
+            {
+                ScoreManager.score += 1000;
+            }
+            else
+                sliderLC.value += 1000;
+            
+            posZ = Random.Range(100.0f, 200.0f);
             posX = Random.Range(-20.0f, 20.0f);
-            this.transform.position = new Vector3(posX * Time.deltaTime, 0.0f, posZ * Time.deltaTime);
+            this.transform.position = new Vector3(posX, 0.0f, posZ);
         }
 
         if (other.tag == "ResetWall")
@@ -46,7 +52,7 @@ public class TopViewItemLC : MonoBehaviour
 
             posZ = Random.Range(35, 100);
             posX = Random.Range(-20.0f, 20.0f);
-            this.transform.position = new Vector3(posX * Time.deltaTime, 0.0f, posZ * Time.deltaTime);
+            this.transform.position = new Vector3(posX, 0.0f, posZ);
         }
 
     }

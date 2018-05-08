@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TopViewPlayerMove : MonoBehaviour {
 
@@ -31,9 +32,14 @@ public class TopViewPlayerMove : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Asteroid" || other.tag == "Mine")
+        if (other.tag == "Asteroid" || other.tag == "Mine" || other.tag == "EnemyBullet")
         {
-            shield.value -= 10;
+            shield.value -= 2;
+
+            if(shield.value <= 0)
+            {
+                SceneManager.LoadScene("Result");
+            }
         }
     }
 }

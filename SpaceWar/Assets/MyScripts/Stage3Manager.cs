@@ -20,13 +20,14 @@ public class Stage3Manager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //AudioManager.Instance().PlayClip(clip);
 
-        //if(AudioManager.Instance() == null)
-        //{
+        if (AudioManager.Instance() != null)
+        {
+            AudioManager.Instance().PlayClip(clip);
+        }
 
-        //}
-        GetComponent<AudioSource>().PlayOneShot(clip, 1.0f);
+        else
+            GetComponent<AudioSource>().PlayOneShot(clip, 1.0f);
     }
 
     // Update is called once per frame

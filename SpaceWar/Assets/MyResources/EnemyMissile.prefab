@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 54162505353037994}
   - component: {fileID: 136148829486059380}
   - component: {fileID: 114768327905300892}
+  - component: {fileID: 114083682432874138}
   m_Layer: 0
   m_Name: EnemyMissile
-  m_TagString: Enemy
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +101,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114083682432874138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1400553239426048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f5108d013362f46aaac4e11924171d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114768327905300892
 MonoBehaviour:
   m_ObjectHideFlags: 1

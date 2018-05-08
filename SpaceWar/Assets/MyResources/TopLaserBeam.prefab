@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114240553811007106}
   - component: {fileID: 136559203901533238}
   - component: {fileID: 114145135063991638}
-  - component: {fileID: 114594751126102352}
+  - component: {fileID: 114194825788298568}
   m_Layer: 0
   m_Name: TopLaserBeam
   m_TagString: LaserBeam
@@ -98,6 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
+--- !u!114 &114194825788298568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1868312642595786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc34804fdfc75a742b4ea0ea3d69fbd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114240553811007106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,17 +127,6 @@ MonoBehaviour:
   m_lineColor: {r: 1, g: 0, b: 0, a: 1}
   m_lineWidth: 30
   m_lightSaberFactor: 0.131
---- !u!114 &114594751126102352
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1868312642595786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7c42275da72a0d4a9ed9cb625139a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &136559203901533238
 CapsuleCollider:
   m_ObjectHideFlags: 1

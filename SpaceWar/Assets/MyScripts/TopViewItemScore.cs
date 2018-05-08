@@ -33,10 +33,11 @@ public class TopViewItemScore : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            TopViewScoreManager.score += 200000;
-            posZ = Random.Range(100.0f, 500.0f);
-            posX = Random.Range(-20.0f, 20.0f);
-            this.transform.position = new Vector3(posX * Time.deltaTime, 0.0f, posZ * Time.deltaTime);
+            ScoreManager.score += 20000;
+
+            posZ = Random.Range(100.0f, 200.0f);
+            posX = Random.Range(-30.0f, 30.0f);
+            this.transform.position = new Vector3(posX, 0.0f, posZ);
         }
 
         if (other.tag == "ResetWall")
@@ -44,7 +45,7 @@ public class TopViewItemScore : MonoBehaviour
 
             posZ = Random.Range(35, 100);
             posX = Random.Range(-20.0f, 20.0f);
-            this.transform.position = new Vector3(posX * Time.deltaTime, 0.0f, posZ * Time.deltaTime);
+            this.transform.position = new Vector3(posX, 0.0f, posZ);
         }
 
     }

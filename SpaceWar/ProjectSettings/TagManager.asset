@@ -23,6 +23,9 @@ TagManager:
   - Asteroid
   - BackPlayerPos
   - TopPlayerPos
+  - Core
+  - EnemyBullet
+  - SuperPlayerLaser
   layers:
   - Default
   - TransparentFX

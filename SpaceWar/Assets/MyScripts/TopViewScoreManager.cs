@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TopViewScoreManager : MonoBehaviour {
 
     public Text scoreText;
-    public static int score = 0;
+    //public static int score = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +15,9 @@ public class TopViewScoreManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        scoreText.text = score.ToString("D8");
+        if (ScoreManager.Instance() != null)
+        {
+            scoreText.text = ScoreManager.score.ToString("D8");
+        }
 	}
 }

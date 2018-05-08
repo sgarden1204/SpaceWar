@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TopViewBoss : MonoBehaviour {
 
@@ -23,26 +24,32 @@ public class TopViewBoss : MonoBehaviour {
         if(other.tag == "Missile")
         {
             bossSlider.value -= 1;
-            TopViewScoreManager.score += Random.Range(10, 10);
+            ScoreManager.score += Random.Range(10, 10);
         }
 
         if(other.tag == "LaserBeam")
         {
             bossSlider.value -= 5;
-            TopViewScoreManager.score += Random.Range(10, 50);
+            ScoreManager.score += Random.Range(10, 50);
         }
 
         if(other.tag == "Laser")
         {
             bossSlider.value -= 30;
-            TopViewScoreManager.score += Random.Range(10, 300);
+            ScoreManager.score += Random.Range(10, 300);
         }
 
-
-
-        if(bossSlider.value <= 0)
+        if (other.tag == "SuperPlayerLaser")
         {
+            bossSlider.value -= 100;
+            ScoreManager.score += Random.Range(100, 1000);
+        }
+
+        if (bossSlider.value <= 0)
+        {
+            ScoreManager.Instance().ScoreSave();
             Destroy(this.gameObject);
+            SceneManager.LoadScene("Stage4Start");
         }
     }
 }
