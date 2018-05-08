@@ -26,6 +26,8 @@ TagManager:
   - Core
   - EnemyBullet
   - SuperPlayerLaser
+  - asteroid
+  - Boss
   layers:
   - Default
   - TransparentFX

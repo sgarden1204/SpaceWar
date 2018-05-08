@@ -39,7 +39,7 @@ public class TotalViewBossTopMissileBoom : MonoBehaviour
         //    Destroy(this.gameObject);
         //}
 
-        if (other.tag == "TopPlayerPos")
+        if (other.tag == "TopPlayerPos" || other.tag == "PlayerPos" || other.tag == "Player")
         {
             Destroy(this.gameObject);
         }

@@ -2164,6 +2164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28362673c287de840939300139b63557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel: {fileID: 751525646}
   text:
   - {fileID: 938938443}
   - {fileID: 963021491}

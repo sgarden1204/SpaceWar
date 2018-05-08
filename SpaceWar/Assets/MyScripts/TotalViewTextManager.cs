@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TotalViewTextManager : MonoBehaviour
 {
+    public Transform panel;
+
     public Text[] text = new Text[15];
 
     private int next = 0;
@@ -34,12 +37,18 @@ public class TotalViewTextManager : MonoBehaviour
                 image.sprite = sprite;
                 break;
 
-            case 15:
-                //panel.gameObject.SetActive(false);
+            case 14:
+                panel.gameObject.SetActive(false);
                 CancelInvoke();
+                Invoke("NextScene", 3.0f);
                 break;
             default:
                 break;
         }
+    }
+
+    public void NextScene()
+    {
+        SceneManager.LoadScene("Stage4");
     }
 }

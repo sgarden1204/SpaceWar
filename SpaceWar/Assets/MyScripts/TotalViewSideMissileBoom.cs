@@ -23,7 +23,7 @@ public class TotalViewSideMissileBoom : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy" || other.tag == "Wall")
+        if (other.tag == "Enemy" || other.tag == "Wall" || other.tag == "Boss")
         {
             Destroy(this.gameObject);
         }

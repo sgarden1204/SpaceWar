@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGameLeftShipAni : MonoBehaviour {
 
@@ -32,7 +33,14 @@ public class EndGameLeftShipAni : MonoBehaviour {
             LaserPos.transform.position = new Vector3(this.transform.position.x + Lpos, this.transform.position.y, this.transform.position.z + Lpos);
             LaserPos.transform.eulerAngles = new Vector3(0.0f, -45.0f, 0.0f);
             text.gameObject.SetActive(true);
+            Invoke("NextScene", 3.5f);
             one = false;
         }
 	}
+
+    public void NextScene()
+    {
+        ScoreManager.alive = true;
+        SceneManager.LoadScene("Result");
+    }
 }

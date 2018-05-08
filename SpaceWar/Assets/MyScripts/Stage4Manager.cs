@@ -28,6 +28,7 @@ public class Stage4Manager : MonoBehaviour
 
     //public static Text ViewChangeText;
     public Text changeText;
+    public Text scoreText;
 
     public AudioClip clip;
 
@@ -38,9 +39,12 @@ public class Stage4Manager : MonoBehaviour
 
     private int weaponChange = 0;
 
+    private bool esc;
+
     // Use this for initialization
     void Start()
     {
+        esc = true;
         backCamera.enabled = true;
         topCamera.enabled = false;
         sideCamera.enabled = false;
@@ -53,19 +57,34 @@ public class Stage4Manager : MonoBehaviour
         sideBoss.SetActive(false);
         backBoss.SetActive(true);
 
-        //AudioManager.Instance().PlayClip(clip);
+        if (AudioManager.Instance() != null)
+        {
+            AudioManager.Instance().PlayClip(clip);
+        }
 
-        //if(AudioManager.Instance() == null)
-        //{
-
-        //}
-
-        GetComponent<AudioSource>().PlayOneShot(clip, 1.0f);
+        else
+            GetComponent<AudioSource>().PlayOneShot(clip, 1.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        scoreText.text = ScoreManager.score.ToString("D8");
+
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (esc)
+            {
+                Time.timeScale = 0.0f;
+                esc = false;
+            }
+
+            else
+            {
+                Time.timeScale = 1.0f;
+                esc = true;
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -103,6 +122,7 @@ public class Stage4Manager : MonoBehaviour
             backBoss.SetActive(true);
 
             changeText.text = "BACK";
+            changeText.color = Color.red;
             state = State.Back;
 
             sideEnemy[0].SetActive(false);
@@ -124,6 +144,7 @@ public class Stage4Manager : MonoBehaviour
             backBoss.SetActive(false);
 
             changeText.text = "TOP";
+            changeText.color = Color.blue;
             state = State.Top;
 
             sideEnemy[0].SetActive(false);
@@ -146,6 +167,7 @@ public class Stage4Manager : MonoBehaviour
             backBoss.SetActive(false);
 
             changeText.text = "SIDE";
+            changeText.color = Color.yellow;
             state = State.Side;
 
             sideEnemy[0].SetActive(true);

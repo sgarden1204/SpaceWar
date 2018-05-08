@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TotalViewPlayerTopMove : MonoBehaviour
 {
-
+    public Slider shield;
+    public int damage = 2;
     public float moveSpeed = 10.0f;
 
     CharacterController controller;
@@ -61,5 +64,18 @@ public class TotalViewPlayerTopMove : MonoBehaviour
         }
 
         controller.Move(moveVector * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "EnemyBullet")
+        {
+            shield.value -= damage;
+
+            if (shield.value <= 0)
+            {
+                SceneManager.LoadScene("Result");
+            }
+        }
     }
 }

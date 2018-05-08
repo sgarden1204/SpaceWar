@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class EndGameStarItem : MonoBehaviour {
 
+
     public GameObject leftShip;
     public GameObject rightShip;
 
-    public Transform text;
+    public Transform textClose;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +24,8 @@ public class EndGameStarItem : MonoBehaviour {
     {
         leftShip.SetActive(true);
         rightShip.SetActive(true);
+
+        textClose.gameObject.SetActive(false);
 
         Destroy(this.gameObject);
     }

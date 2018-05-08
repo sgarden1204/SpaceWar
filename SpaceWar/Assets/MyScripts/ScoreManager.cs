@@ -7,7 +7,9 @@ public class ScoreManager : MonoBehaviour {
 
     public static ScoreManager scoreInstance = null;
 
-    public static int score;
+    public static int score = 0;
+
+    public static bool alive = false;
 
     public Text scoretext;
 
