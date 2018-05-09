@@ -9,6 +9,8 @@ public class TopViewBoss : MonoBehaviour {
     public Slider bossSlider;
     public Text score;
 
+    public GameObject boom;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -47,9 +49,21 @@ public class TopViewBoss : MonoBehaviour {
 
         if (bossSlider.value <= 0)
         {
-            ScoreManager.Instance().ScoreSave();
-            Destroy(this.gameObject);
-            SceneManager.LoadScene("Stage4Start");
+            if (ScoreManager.Instance() != null)
+            {
+                ScoreManager.Instance().ScoreSave();
+            }
+
+            Instantiate(boom, this.transform);
+            Invoke("DelayNextScene", 3.0f);
+            Destroy(this.gameObject,3.0f);
         }
+
+
+    }
+
+    public void DelayNextScene()
+    {
+        SceneManager.LoadScene("Stage4Start");
     }
 }

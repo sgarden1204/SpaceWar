@@ -197,6 +197,7 @@ MonoBehaviour:
   missileSound: {fileID: 8300000, guid: ea908bdb881972049b785905ec61eb94, type: 3}
   boss: {fileID: 0}
   distance: 15
+  boom: {fileID: 1621178740987336, guid: b4968c0fd271b384baf597181eb70c7f, type: 2}
 --- !u!135 &135698722501383210
 SphereCollider:
   m_ObjectHideFlags: 1

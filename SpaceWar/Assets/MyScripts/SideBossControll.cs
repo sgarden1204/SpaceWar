@@ -21,6 +21,7 @@ public class SideBossControll : MonoBehaviour {
     private float upDown = 0.0f;
 
     private GameObject fire;
+    public GameObject boom;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,7 @@ public class SideBossControll : MonoBehaviour {
         playerPos = GameObject.Find("PlayerPos");
         boss = GameObject.Find("BossHP");
         bossHp = boss.GetComponent<Slider>();
+        //boom = GameObject.Find("SideBossExplosion");
         Debug.Log(playerPos);
 	}
 	
@@ -57,11 +59,19 @@ public class SideBossControll : MonoBehaviour {
 
         if(bossHp.value <= 0)
         {
+            Invoke("DelayNextScene",2.0f);
+            Destroy(this.gameObject, 2.0f);
+
+
             if(ScoreManager.Instance() != null)
             {
                 ScoreManager.Instance().ScoreSave();
             }
-            SceneManager.LoadScene("Stage3");
         }
+    }
+
+    public void DelayNextScene()
+    {
+        SceneManager.LoadScene("Stage3");
     }
 }

@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class Stage4Manager : MonoBehaviour
 {
+    public GameObject[] deleteTopBoss = new GameObject[3];
+    public GameObject[] deleteSideBoss = new GameObject[6];
+    //public GameObject[] deleteBackBoss = new GameObject[3];
+
     public Camera backCamera;
     public Camera topCamera;
     public Camera sideCamera;
@@ -18,6 +22,15 @@ public class Stage4Manager : MonoBehaviour
     public GameObject sideBoss;
 
     public GameObject[] sideEnemy = new GameObject[2];
+
+    public GameObject boom;
+    private GameObject[] boomPos = new GameObject[4];
+    public float boomPosValue = 20.0f;
+
+    private bool topDie = false;
+    private bool sideDie = false;
+
+    public Slider bossHp;
 
     public enum State
     {
@@ -69,7 +82,31 @@ public class Stage4Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = ScoreManager.score.ToString("D8");
+        if (ScoreManager.Instance() != null)
+        {
+            scoreText.text = ScoreManager.score.ToString("D8");
+        }
+
+        if(bossHp.value <= 2250 && topDie == false)
+        {
+            deleteTopBoss[0].gameObject.SetActive(false);
+            deleteTopBoss[1].gameObject.SetActive(false);
+            deleteTopBoss[2].gameObject.SetActive(false);
+            TopExplosion();
+            topDie = true;
+        }
+
+        if(bossHp.value <= 1500 && sideDie == false)
+        {
+            deleteSideBoss[0].gameObject.SetActive(false);
+            deleteSideBoss[1].gameObject.SetActive(false);
+            deleteSideBoss[2].gameObject.SetActive(false);
+            deleteSideBoss[3].gameObject.SetActive(false);
+            deleteSideBoss[4].gameObject.SetActive(false);
+            deleteSideBoss[5].gameObject.SetActive(false);
+            SideExplosion();
+            sideDie = true;
+        }
 
         if (Input.GetKeyUp(KeyCode.Escape))
         {
@@ -173,5 +210,32 @@ public class Stage4Manager : MonoBehaviour
             sideEnemy[0].SetActive(true);
             sideEnemy[1].SetActive(true);
         }
+    }
+
+    public void TopExplosion()
+    {
+        boomPos[0] = Instantiate(boom);
+        boomPos[0].transform.position = new Vector3(this.transform.position.x, this.transform.position.y + boomPosValue, this.transform.position.z + boomPosValue * 3);
+
+        boomPos[1] = Instantiate(boom);
+        boomPos[1].transform.position = new Vector3(this.transform.position.x + boomPosValue / 2.0f, this.transform.position.y + boomPosValue, this.transform.position.z + boomPosValue * 3);
+
+        boomPos[2] = Instantiate(boom);
+        boomPos[2].transform.position = new Vector3(this.transform.position.x - boomPosValue / 2.0f, this.transform.position.y + boomPosValue, this.transform.position.z + boomPosValue * 3);
+    }
+
+    public void SideExplosion()
+    {
+        boomPos[0] = Instantiate(boom);
+        boomPos[0].transform.position = new Vector3(this.transform.position.x + boomPosValue, this.transform.position.y + boomPosValue, this.transform.position.z + boomPosValue / 2.0f);
+
+        boomPos[1] = Instantiate(boom);
+        boomPos[1].transform.position = new Vector3(this.transform.position.x + boomPosValue, this.transform.position.y - boomPosValue, this.transform.position.z + boomPosValue / 2.0f);
+
+        boomPos[2] = Instantiate(boom);
+        boomPos[2].transform.position = new Vector3(this.transform.position.x - boomPosValue, this.transform.position.y + boomPosValue, this.transform.position.z - boomPosValue / 2.0f);
+
+        boomPos[3] = Instantiate(boom);
+        boomPos[3].transform.position = new Vector3(this.transform.position.x - boomPosValue, this.transform.position.y - boomPosValue, this.transform.position.z - boomPosValue / 2.0f);
     }
 }

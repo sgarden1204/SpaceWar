@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MyScenes/InfiniteMode.unity
+- path: Assets/MyScenes/Main.unity
   isLoaded: 1
   isActive: 1

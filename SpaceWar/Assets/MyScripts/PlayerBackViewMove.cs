@@ -31,9 +31,14 @@ public class PlayerBackViewMove : MonoBehaviour {
 
         controller.Move(move * Time.deltaTime);
 
-        if(Input.GetKeyDown(KeyCode.Alpha9))
+        //if(Input.GetKeyDown(KeyCode.Alpha9))
+        //{
+        //    this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 10000.0f);
+        //}
+
+        if(Input.GetKeyUp(KeyCode.Alpha0))
         {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 10000.0f);
+            SceneManager.LoadScene("Result");
         }
 	}
 

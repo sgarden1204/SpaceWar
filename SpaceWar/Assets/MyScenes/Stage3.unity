@@ -175,6 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossSlider: {fileID: 461928693}
   score: {fileID: 1506657603}
+  boom: {fileID: 1621178740987336, guid: b4968c0fd271b384baf597181eb70c7f, type: 2}
 --- !u!1 &68748987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,9 +1350,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 5000
+  m_MaxValue: 2000
   m_WholeNumbers: 1
-  m_Value: 5000
+  m_Value: 2000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
