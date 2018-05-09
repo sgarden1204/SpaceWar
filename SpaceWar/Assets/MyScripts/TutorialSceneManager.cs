@@ -15,18 +15,21 @@ public class TutorialSceneManager : MonoBehaviour {
     public Sprite missile;
     public Sprite machinegun;
 
+   // public Text myScore;
+
     private int weaponChange = 0;
 
 	// Use this for initialization
 	void Start () {
-
         //AudioManager.Instance().PlayClip(clip);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+
+       // myScore.text = ScoreManager.score.ToString("D8");
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             switch(weaponChange)
             {

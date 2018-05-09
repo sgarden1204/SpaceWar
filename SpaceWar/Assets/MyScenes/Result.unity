@@ -599,10 +599,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecbec562530bda40bed0237fc09145b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missionResultText: {fileID: 0}
-  scoreResultText: {fileID: 0}
-  highScoreResultText: {fileID: 0}
-  rankResultText: {fileID: 0}
+  missionResultText: {fileID: 12640083}
+  scoreResultText: {fileID: 940757716}
+  highScoreResultText: {fileID: 1021617897}
+  rankResultText: {fileID: 1015219555}
   clip: {fileID: 8300000, guid: e4cfb7eff5135aa47b4465ecd899da2c, type: 3}
 --- !u!82 &914394509
 AudioSource:

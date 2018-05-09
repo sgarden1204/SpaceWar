@@ -38,6 +38,7 @@ public class PlayerBackViewMove : MonoBehaviour {
 
         if(Input.GetKeyUp(KeyCode.Alpha0))
         {
+            ScoreManager.Instance().ScoreSave();
             SceneManager.LoadScene("Result");
         }
 	}
@@ -51,6 +52,7 @@ public class PlayerBackViewMove : MonoBehaviour {
 
             if (shild.value <= 0)
             {
+                ScoreManager.Instance().ScoreSave();
                 SceneManager.LoadScene("Result");
             }
         }

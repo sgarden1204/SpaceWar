@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour {
 
     public static bool alive = false;
 
-    public Text scoretext;
+    //public Text scoretext;
 
     public static ScoreManager Instance()
     {
@@ -26,11 +26,14 @@ public class ScoreManager : MonoBehaviour {
             Destroy(this.gameObject);
         }
 
-        else
+        else // scoreInstace null;
         {
             scoreInstance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+
+        //scoreInstance = this;
+        //DontDestroyOnLoad(this.gameObject);
 		
 	}
 
@@ -40,12 +43,23 @@ public class ScoreManager : MonoBehaviour {
         {
             score += 100;
         }
-        scoretext.text = score.ToString("D8");
+        //scoretext.text = score.ToString("D8");
     }
 
     public void ScoreSave()
     {
-        PlayerPrefs.SetInt("score", score);
-    }
+        int highScore;
+        int currentScore;
 
+        highScore = PlayerPrefs.GetInt("HighScore");
+        currentScore = score; //PlayerPrefs.GetInt("Score") + score;
+
+        if(highScore <= currentScore)
+        {
+            highScore = currentScore;
+            PlayerPrefs.SetInt("HighScore", highScore);
+        }
+
+        PlayerPrefs.SetInt("Score", currentScore);
+    }
 }

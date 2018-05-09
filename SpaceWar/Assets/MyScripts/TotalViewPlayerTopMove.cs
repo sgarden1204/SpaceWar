@@ -74,6 +74,7 @@ public class TotalViewPlayerTopMove : MonoBehaviour
 
             if (shield.value <= 0)
             {
+                ScoreManager.Instance().ScoreSave();
                 SceneManager.LoadScene("Result");
             }
         }

@@ -16,10 +16,10 @@ public class ResultManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        Invoke("ResultMission", 2.0f);
-        Invoke("ResultYourScore", 3.0f);
-        Invoke("ResultYourRank", 4.0f);
+        Invoke("ResultMission", 3.0f);
+        Invoke("ResultYourScore", 4.0f);
         Invoke("ResultHighScore", 5.0f);
+        Invoke("ResultYourRank", 6.0f);
 
         if (AudioManager.Instance() != null)
         {
@@ -64,16 +64,16 @@ public class ResultManager : MonoBehaviour {
     public void ResultHighScore()
     {
         //if 000100000 10만점
-        int highScore;
-        int currentScore;
+        //int highScore;
+        //int currentScore;
 
-        currentScore = PlayerPrefs.GetInt("Score");
-        highScore = PlayerPrefs.GetInt("HighScore");
+        //currentScore = PlayerPrefs.GetInt("Score");
+        //highScore = PlayerPrefs.GetInt("HighScore");
 
-        if(highScore == 0)
-        {
-            PlayerPrefs.SetInt("HighScore", PlayerPrefs.GetInt("Score"));
-        }
+        //if(highScore == 0)
+        //{
+        //    PlayerPrefs.SetInt("HighScore", currentScore);
+        //}
 
         highScoreResultText.text = PlayerPrefs.GetInt("HighScore").ToString("D8");
     }

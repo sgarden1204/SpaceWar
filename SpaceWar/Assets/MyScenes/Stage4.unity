@@ -978,9 +978,10 @@ MonoBehaviour:
   - {fileID: 578854989}
   - {fileID: 860632051}
   boom: {fileID: 1081006278161358, guid: 3aaee82bbf68062469a4484016f9f87a, type: 2}
+  boomPosValue: 20
   bossHp: {fileID: 1039665225}
   changeText: {fileID: 16671419}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1452733041}
   clip: {fileID: 8300000, guid: 9619cfb95a696e645ac9d96d67893cfc, type: 3}
   bulletImg: {fileID: 121902948}
   raser: {fileID: 21300000, guid: 49b8eb76af643f042b2afffb2f9131e8, type: 3}
@@ -5643,7 +5644,7 @@ GameObject:
   - component: {fileID: 1452733041}
   - component: {fileID: 1452733040}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8118,9 +8119,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 1000
+  m_MaxValue: 200
   m_WholeNumbers: 1
-  m_Value: 1000
+  m_Value: 200
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -59,14 +59,13 @@ public class SideBossControll : MonoBehaviour {
 
         if(bossHp.value <= 0)
         {
-            Invoke("DelayNextScene",2.0f);
-            Destroy(this.gameObject, 2.0f);
-
-
             if(ScoreManager.Instance() != null)
             {
                 ScoreManager.Instance().ScoreSave();
             }
+
+            Invoke("DelayNextScene",2.0f);
+            Destroy(this.gameObject, 2.0f);
         }
     }
 
