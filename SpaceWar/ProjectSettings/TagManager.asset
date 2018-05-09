@@ -28,6 +28,7 @@ TagManager:
   - SuperPlayerLaser
   - asteroid
   - Boss
+  - Item
   layers:
   - Default
   - TransparentFX

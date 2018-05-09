@@ -14,6 +14,7 @@ public class ModeTextManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 0.0f;
         InvokeRepeating("StartText", 2.5f, 2.5f);
     }
 
@@ -33,6 +34,7 @@ public class ModeTextManager : MonoBehaviour
             case 5:
                 panel.gameObject.SetActive(false);
                 CancelInvoke();
+                Time.timeScale = 1.0f;
                 break;
             default:
                 break;
