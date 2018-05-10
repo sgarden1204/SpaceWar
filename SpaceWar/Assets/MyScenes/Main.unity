@@ -2708,7 +2708,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2109895316}
+      - m_Target: {fileID: 643369408}
         m_MethodName: FullScreen
         m_Mode: 1
         m_Arguments:

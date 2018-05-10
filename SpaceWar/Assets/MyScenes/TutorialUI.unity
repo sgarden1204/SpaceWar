@@ -169,7 +169,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -480,7 +480,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1019,7 +1019,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1162,7 +1162,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1209,7 +1209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c683a48200df2e4d8798e7be70ab4b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoretext: {fileID: 1122549736}
 --- !u!4 &575812630
 Transform:
   m_ObjectHideFlags: 0
@@ -1368,7 +1367,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1802,7 +1801,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2182,7 +2181,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3786,7 +3785,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3861,7 +3860,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4211,7 +4210,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4340,7 +4339,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4791,7 +4790,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4866,7 +4865,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -5062,7 +5061,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 822dfdd5aac0ff041bd182bac960befb, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
