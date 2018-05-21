@@ -36,7 +36,11 @@ public class TotalViewBossHit : MonoBehaviour {
 
             if(bossHp.value <= 0)
             {
-                ScoreManager.Instance().ScoreSave();
+                if(ScoreManager.Instance() != null)
+                {
+                    ScoreManager.Instance().ScoreSave();
+                }
+
                 Explosion();
                 Invoke("DelayNextScene", 3.0f);
             }

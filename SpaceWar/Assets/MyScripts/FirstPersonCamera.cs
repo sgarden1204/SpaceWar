@@ -5,6 +5,7 @@ using UnityEngine;
 public class FirstPersonCamera : MonoBehaviour {
 
     public GameObject targetPlayerPos;
+    public GameObject masterCamera;
 
     public float cameraMoveSpeed = 20.0f;
     public float cameraControllMoveSpeed = 20.0f;
@@ -22,6 +23,9 @@ public class FirstPersonCamera : MonoBehaviour {
         //this.transform.Translate(0.0f, 0.0f, 20.0f * Time.deltaTime);
 
         this.transform.position = targetPlayerPos.transform.position;
+        this.transform.rotation = targetPlayerPos.transform.rotation;
+        masterCamera.transform.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+
         //this.transform.position = new Vector3(targetPlayerPos.transform.position.x, targetPlayerPos.transform.position.y + 5.0f, targetPlayerPos.transform.position.z - 3.0f);
         this.transform.position = new Vector3(targetPlayerPos.transform.position.x, targetPlayerPos.transform.position.y, targetPlayerPos.transform.position.z);
 

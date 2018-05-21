@@ -11,6 +11,9 @@ public class PlayerBackViewMove : MonoBehaviour {
     public float cameraRotSpeed = 120.0f;
 
     public Slider shild;
+    public Text wrongWay;
+    public AudioClip hitSound;
+    public AudioClip wrongWayClip;
 
     CharacterController controller;
     Vector3 move;
@@ -41,6 +44,16 @@ public class PlayerBackViewMove : MonoBehaviour {
             ScoreManager.Instance().ScoreSave();
             SceneManager.LoadScene("Result");
         }
+
+        if(this.transform.position.x <= -18000.0f || this.transform.position.x >= 18000.0f || this.transform.position.y <= -10000.0f || this.transform.position.y >= 10000.0f || this.transform.position.z <= -55000.0f)
+        {
+            wrongWay.gameObject.SetActive(true);
+            this.transform.position = new Vector3(0.0f, 0.0f, -50000.0f);
+            this.transform.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+            move = this.transform.TransformDirection(move);
+            GetComponent<AudioSource>().PlayOneShot(wrongWayClip);
+            Invoke("Sec", 1.5f);
+        }
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -50,9 +63,15 @@ public class PlayerBackViewMove : MonoBehaviour {
         {
             shild.value -= 10;
 
+            EZCameraShake.CameraShaker.Instance.ShakeOnce(5.0f, 5.0f, 1.0f, 1.0f);
+            GetComponent<AudioSource>().PlayOneShot(hitSound);
+
             if (shild.value <= 0)
             {
-                ScoreManager.Instance().ScoreSave();
+                if (ScoreManager.Instance() != null)
+                {
+                    ScoreManager.Instance().ScoreSave();
+                }
                 SceneManager.LoadScene("Result");
             }
         }
@@ -61,5 +80,15 @@ public class PlayerBackViewMove : MonoBehaviour {
         {
             SceneManager.LoadScene("Stage2");
         }
+
+        //if(other.tag == "ResetWall")
+        //{
+
+        //}
+    }
+
+    public void Sec()
+    {
+        wrongWay.gameObject.SetActive(false);
     }
 }
