@@ -11221,6 +11221,7 @@ GameObject:
   - component: {fileID: 214146633}
   - component: {fileID: 214146632}
   - component: {fileID: 214146636}
+  - component: {fileID: 214146637}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11259,7 +11260,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 30000
+  far clip plane: 40000
   field of view: 90
   orthographic: 0
   orthographic size: 5
@@ -11305,6 +11306,20 @@ MonoBehaviour:
   targetPlayerPos: {fileID: 1724617663}
   cameraMoveSpeed: 5000
   cameraControllMoveSpeed: 7500
+  cameraRotSpeed: 60
+--- !u!114 &214146637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 214146631}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37f767e967d2df4b938641258f1a7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllMoveSpeed: 10
+  controllRotSpeed: 120
 --- !u!1001 &214235733
 Prefab:
   m_ObjectHideFlags: 0
@@ -13876,9 +13891,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1000
+  m_MaxValue: 10000
   m_WholeNumbers: 1
-  m_Value: 1000
+  m_Value: 10000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -88847,6 +88862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5000
   controllMoveSpeed: 7500
+  cameraRotSpeed: 120
   shild: {fileID: 1695635768}
 --- !u!143 &1724617666
 CharacterController:
@@ -88958,7 +88974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   machinegun: {fileID: 136330, guid: 402576c0b6f22d04584b22d313633f08, type: 2}
   missile: {fileID: 1328987964630776, guid: 9d271554b04514845bccf95f1f6a1e5c, type: 2}
-  laser: {fileID: 1641207414076226, guid: 2d3306f45e8594f4f8682c207e793abf, type: 2}
+  laser: {fileID: 1273129403519904, guid: 8f86e2dfa9f7aeb47a9f6c4a27e6bb58, type: 2}
   laserSound: {fileID: 8300000, guid: 4c90a45391343ee4fa0e8eeee303214d, type: 3}
   missileSound: {fileID: 8300000, guid: 237ad2b9df472f244975ee883fe7a993, type: 3}
   machinegunSound: {fileID: 8300000, guid: c1f17bbca0749d0499f2ff0b3fa326e5, type: 3}

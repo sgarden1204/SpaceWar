@@ -48,14 +48,22 @@ public class TutorialPlayerFire : MonoBehaviour
                 case 0:
                     lc.value += 20;
                     nextFire = Time.time + fireRate;
-                    myMisile[0] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+
+                    myMisile[0] = Instantiate(missile, shotSpawn.position, shotSpawn.rotation);
                     myMisile[0].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + distance);
-                    myMisile[1] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    //myMisile[0].transform.eulerAngles = new Vector3(shotSpawn.rotation.x, shotSpawn.rotation.y, shotSpawn.rotation.z);
+
+                    myMisile[1] = Instantiate(missile, shotSpawn.position, shotSpawn.rotation);
                     myMisile[1].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + distance);
-                    myMisile[2] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    //myMisile[1].transform.eulerAngles = new Vector3(shotSpawn.rotation.x, shotSpawn.rotation.y, shotSpawn.rotation.z);
+
+                    myMisile[2] = Instantiate(missile, shotSpawn.position, shotSpawn.rotation);
                     myMisile[2].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + distance);
-                    myMisile[3] = Instantiate(missile, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
+                    //myMisile[2].transform.eulerAngles = new Vector3(shotSpawn.rotation.x, shotSpawn.rotation.y, shotSpawn.rotation.z);
+
+                    myMisile[3] = Instantiate(missile, shotSpawn.position, shotSpawn.rotation);
                     myMisile[3].transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + distance);
+                    //myMisile[3].transform.eulerAngles = new Vector3(shotSpawn.rotation.x, shotSpawn.rotation.y, shotSpawn.rotation.z);
                     GetComponent<AudioSource>().PlayOneShot(missileSound, 0.5f);
                     break;
 
@@ -64,7 +72,8 @@ public class TutorialPlayerFire : MonoBehaviour
                     {
                         nextFire = Time.time + fireRate;
                         myLaser = Instantiate(laser, shotSpawn.position * Time.deltaTime, shotSpawn.rotation);
-                        myLaser.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z);
+                        myLaser.transform.position = new Vector3(shotSpawn.position.x, shotSpawn.position.y, shotSpawn.position.z + 15.0f);
+                        //myLaser.transform.eulerAngles = new Vector3(shotSpawn.rotation.x, shotSpawn.rotation.y, shotSpawn.rotation.z);
                         GetComponent<AudioSource>().PlayOneShot(laserSound, 0.5f);
                         lc.value -= 100;
                     }

@@ -8,6 +8,7 @@ public class PlayerBackViewMove : MonoBehaviour {
 
     public float moveSpeed = 20.0f;
     public float controllMoveSpeed = 20.0f;
+    public float cameraRotSpeed = 120.0f;
 
     public Slider shild;
 
@@ -26,15 +27,14 @@ public class PlayerBackViewMove : MonoBehaviour {
 
         float ver = Input.GetAxis("Vertical");
         float hor = Input.GetAxis("Horizontal");
+        float amtRot = cameraRotSpeed * Time.deltaTime;
 
-        move = new Vector3(hor * controllMoveSpeed, ver * controllMoveSpeed, moveSpeed);
+        this.transform.Rotate(Vector3.up * hor * amtRot);
+
+        move = new Vector3(0.0f, ver * controllMoveSpeed, moveSpeed);
+        move = this.transform.TransformDirection(move);
 
         controller.Move(move * Time.deltaTime);
-
-        //if(Input.GetKeyDown(KeyCode.Alpha9))
-        //{
-        //    this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 10000.0f);
-        //}
 
         if(Input.GetKeyUp(KeyCode.Alpha0))
         {

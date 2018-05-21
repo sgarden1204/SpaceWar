@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 4431768251160840}
   - component: {fileID: 114764566971743416}
   - component: {fileID: 136513904723913270}
+  - component: {fileID: 114347817397976766}
   m_Layer: 0
   m_Name: Mylaser
   m_TagString: PlayerMissile
@@ -347,6 +348,35 @@ Transform:
   m_Father: {fileID: 4891853662044782}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114347817397976766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641207414076226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8fbf77ffa261ff40adf2b9cbe3e5da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  INFINITE_LOOP: 0
+  DESTROY_ON_END: 1
+  duration: 0.5
+  all_particles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 1000
+  controllMoveSpeed: 4000
+  rotSpeed: 60
+  moveControllValue: 1
+  xPos: 1
+  playerPos: {fileID: 0}
 --- !u!114 &114764566971743416
 MonoBehaviour:
   m_ObjectHideFlags: 1

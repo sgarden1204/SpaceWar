@@ -32,7 +32,7 @@ public class AnimationHandler : MonoBehaviour {
 			StopAnimation ();
 
         this.transform.position = playerPos.transform.position;
-        this.transform.position = new Vector3(playerPos.transform.position.x, playerPos.transform.position.y, playerPos.transform.position.z + 10.0f);
+        this.transform.position = new Vector3(playerPos.transform.position.x, playerPos.transform.position.y, playerPos.transform.position.z + 15.0f);
 
         float ver = Input.GetAxis("Vertical");
         float hor = Input.GetAxis("Horizontal");

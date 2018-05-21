@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 4514315417994658}
   - component: {fileID: 114132087774712688}
   - component: {fileID: 136399072837375546}
+  - component: {fileID: 114276279423963060}
   m_Layer: 0
   m_Name: TestLaser
   m_TagString: TestLaser
@@ -373,6 +374,26 @@ MonoBehaviour:
   moveSpeed: 20
   controllMoveSpeed: 20
   playerPos: {fileID: 0}
+--- !u!114 &114276279423963060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501313898916016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc36c1ba623adb04a94cff8f949516ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  INFINITE_LOOP: 0
+  DESTROY_ON_END: 0
+  duration: 0.5
+  all_particles: []
+  moveSpeed: 1000
+  controllMoveSpeed: 4000
+  rotSpeed: 120
+  playerPos: {fileID: 0}
+  myPos: {fileID: 0}
 --- !u!136 &136399072837375546
 CapsuleCollider:
   m_ObjectHideFlags: 1

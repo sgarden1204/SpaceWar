@@ -15,6 +15,7 @@ public class TutorialPlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         float ver = Input.GetAxis("Vertical");
         float hor = Input.GetAxis("Horizontal");
 
