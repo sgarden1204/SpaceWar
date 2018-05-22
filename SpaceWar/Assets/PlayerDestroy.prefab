@@ -9,33 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1636995485116730}
+  m_RootGameObject: {fileID: 1556818742083134}
   m_IsPrefabParent: 1
---- !u!1 &1636995485116730
+--- !u!1 &1407420475444174
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4359910272541424}
-  - component: {fileID: 114568473210980924}
-  m_Layer: 0
-  m_Name: PlayerDestroy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1718257664154940
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4025741801865668}
-  - component: {fileID: 108210537390925416}
+  - component: {fileID: 4001485005917158}
+  - component: {fileID: 108917709626571364}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -43,16 +27,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1768042751755070
+--- !u!1 &1498431258168664
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4614640509786234}
-  - component: {fileID: 198243635187538166}
-  - component: {fileID: 199797071906958734}
+  - component: {fileID: 4525702665628110}
+  - component: {fileID: 198469399269525852}
+  - component: {fileID: 199753187551309680}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -60,53 +44,69 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4025741801865668
+--- !u!1 &1556818742083134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4741126255192382}
+  - component: {fileID: 114663800137864152}
+  m_Layer: 0
+  m_Name: PlayerDestroy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4001485005917158
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1718257664154940}
+  m_GameObject: {fileID: 1407420475444174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
-  m_Father: {fileID: 4359910272541424}
+  m_Father: {fileID: 4741126255192382}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4359910272541424
+--- !u!4 &4525702665628110
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636995485116730}
+  m_GameObject: {fileID: 1498431258168664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_Children: []
+  m_Father: {fileID: 4741126255192382}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4741126255192382
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1556818742083134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
-  - {fileID: 4614640509786234}
-  - {fileID: 4025741801865668}
+  - {fileID: 4525702665628110}
+  - {fileID: 4001485005917158}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4614640509786234
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1768042751755070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children: []
-  m_Father: {fileID: 4359910272541424}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &108210537390925416
+--- !u!108 &108917709626571364
 Light:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1718257664154940}
+  m_GameObject: {fileID: 1407420475444174}
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
@@ -137,26 +137,26 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114568473210980924
+--- !u!114 &114663800137864152
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636995485116730}
+  m_GameObject: {fileID: 1556818742083134}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2816ee529259e364595459991106fef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!198 &198243635187538166
+--- !u!198 &198469399269525852
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1768042751755070}
+  m_GameObject: {fileID: 1498431258168664}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 5
+  simulationSpeed: 2
   stopAction: 0
   looping: 0
   prewarm: 0
@@ -208,7 +208,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -2127375069
+  randomSeed: 15487070
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3419,13 +3419,13 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &199797071906958734
+--- !u!199 &199753187551309680
 ParticleSystemRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1768042751755070}
+  m_GameObject: {fileID: 1498431258168664}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

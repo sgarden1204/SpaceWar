@@ -29,6 +29,9 @@ TagManager:
   - asteroid
   - Boss
   - Item
+  - ShieldItem
+  - ScoreItem
+  - LCItem
   layers:
   - Default
   - TransparentFX
