@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &9032471
 AudioSource:
   m_ObjectHideFlags: 0
@@ -347,8 +347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &19701046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,8 +1526,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &128913531
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2716,8 +2716,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &213563137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2989,8 +2989,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &223841308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3850,8 +3850,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &300663759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4129,8 +4129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &323351135
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4451,8 +4451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &356883655
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4582,8 +4582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &360540771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5297,8 +5297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &409390992
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6436,8 +6436,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &482023810
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6982,8 +6982,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &510365834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7915,8 +7915,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &611643096
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8291,6 +8291,49 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &632930290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 632930292}
+  - component: {fileID: 632930291}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &632930291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632930290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab8353b5ebd32545867da143199a814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultPosInfluence: {x: 1, y: 1, z: 1}
+  DefaultRotInfluence: {x: 0.1, y: 0.1, z: 3}
+--- !u!4 &632930292
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632930290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1072061018}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649458102 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1887322515438764, guid: 46c5f5591947f554cba440a3133faf5d,
@@ -8325,8 +8368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &649458106
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8451,8 +8494,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 0.5
 --- !u!65 &662657901
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8497,7 +8540,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 39455fb505320424a8f302690b0f0cbd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: -1.08
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -8505,7 +8548,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 5000
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -9501,8 +9544,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &765492794
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9839,8 +9882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &815424461
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10209,8 +10252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &823816866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10453,8 +10496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &827114459
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11030,8 +11073,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &903087868
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11604,8 +11647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &929845785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12032,8 +12075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &970168272
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12575,8 +12618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1019150900
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12958,8 +13001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1033094879
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13374,8 +13417,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1060531635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13682,11 +13725,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1072061014}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 10, y: 0, z: -5000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 632930292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &1072061019
@@ -14475,8 +14518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1105112997
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14917,8 +14960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1131489607
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15122,8 +15165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1134534976
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15299,8 +15342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1166706317
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15832,8 +15875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1199334566
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17260,7 +17303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1000
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
   lifetime: 0.1
 --- !u!82 &1293441198
 AudioSource:
@@ -17568,8 +17611,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1345483134
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18058,8 +18101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &1382562038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18370,8 +18413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &1405519585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18817,8 +18860,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1418915560
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19502,6 +19545,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 30
   shield: {fileID: 1024623109}
+  spark: {fileID: 1403408033260852, guid: 943fa746313e0ac4795448ce3a9c2892, type: 2}
+  playerBoom: {fileID: 1636995485116730, guid: 80579550702a78b438efc23a9ae0759e, type: 2}
+  sparkclip: {fileID: 8300000, guid: 83f5b983315fcd8438a57617e94effc2, type: 3}
+  explosionClip: {fileID: 8300000, guid: 39455fb505320424a8f302690b0f0cbd, type: 3}
+  playerExplosionClip: {fileID: 8300000, guid: b978656285a30bf4b88b64a437298832, type: 3}
 --- !u!143 &1491867049
 CharacterController:
   m_ObjectHideFlags: 0
@@ -20080,8 +20128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &1513119566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21465,8 +21513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1608562499
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22217,8 +22265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1656021715
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23536,8 +23584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &1763338082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24990,8 +25038,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!114 &1878956474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25703,8 +25751,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &1929890237
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26811,8 +26859,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &2022266920
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27832,6 +27880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionPanel: {fileID: 1408459748}
+  missionPanel: {fileID: 0}
 --- !u!4 &2138435320
 Transform:
   m_ObjectHideFlags: 0
@@ -28003,8 +28052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  explosion: {fileID: 1338060998370540, guid: b7b0ba3d8140f3c4ab7ec7b4b2a163e5, type: 2}
-  lifetime: 0.1
+  explosion: {fileID: 1721471187364912, guid: 67dadb96500586241a1450b73f1e91bb, type: 2}
+  lifetime: 1
 --- !u!82 &2146849986
 AudioSource:
   m_ObjectHideFlags: 0

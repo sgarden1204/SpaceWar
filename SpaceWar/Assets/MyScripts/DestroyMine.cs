@@ -8,8 +8,10 @@ public class DestroyMine : MonoBehaviour
     public float life = 100.0f;
 
     public GameObject explosion;
+    //public AudioClip explosionClip;
 
     private AudioSource audioDestroy;
+
     private GameObject exp;
 
 
@@ -27,17 +29,22 @@ public class DestroyMine : MonoBehaviour
 
         if(other.tag == "Player")
         {
-            audioDestroy.Play();
+            //GetComponent<AudioSource>().PlayOneShot(explosionClip);
+            //audioDestroy.PlayOneShot(explosionClip);
+
+            //audioDestroy.Play();
+            //GetComponent<AudioSource>().Play();
+            exp = Instantiate(explosion, transform.position, transform.rotation);
 
             Debug.Log("Hit Trigger!");
 
 
-            exp = Instantiate(explosion, transform.position, transform.rotation);
-            exp.transform.position = this.transform.position;
+            //exp.transform.position = this.transform.position;
 
             ScoreManager.score += Random.Range(1, 200);
 
-            Destroy(this.gameObject, lifetime);
+            //Destroy(this.gameObject, lifetime);
+            Destroy(this.gameObject);
         }
 
         if (other.tag == "PlayerMissile")
@@ -46,17 +53,18 @@ public class DestroyMine : MonoBehaviour
 
             if (life <= 0)
             {
-                audioDestroy.Play();
+                //audioDestroy.Play();
+                exp = Instantiate(explosion, transform.position, transform.rotation);
 
                 Debug.Log("Hit Trigger!");
 
 
-                exp = Instantiate(explosion, transform.position, transform.rotation);
-                exp.transform.position = this.transform.position;
+                //exp.transform.position = this.transform.position;
 
                 ScoreManager.score += Random.Range(1, 200);
 
-                Destroy(this.gameObject, lifetime);
+                Destroy(this.gameObject);
+                //Destroy(this.gameObject, lifetime);
                 //Destroy(this.gameObject,audioDestroy.clip.length);
             }
         }

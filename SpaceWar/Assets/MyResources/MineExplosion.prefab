@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4404773082416194}
   - component: {fileID: 108285294875313996}
   - component: {fileID: 114827008684079906}
+  - component: {fileID: 114575022947622964}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -42,6 +43,7 @@ GameObject:
   - component: {fileID: 111433447455754996}
   - component: {fileID: 82236251302766752}
   - component: {fileID: 114114501948967038}
+  - component: {fileID: 114582600116269452}
   m_Layer: 0
   m_Name: MineExplosion
   m_TagString: Untagged
@@ -60,13 +62,14 @@ GameObject:
   - component: {fileID: 15814420742342574}
   - component: {fileID: 12372156904622330}
   - component: {fileID: 26637408051788570}
+  - component: {fileID: 114513410072724284}
   m_Layer: 0
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1715276113683840
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,6 +81,7 @@ GameObject:
   - component: {fileID: 15368509558746026}
   - component: {fileID: 12764548237404416}
   - component: {fileID: 26265371152542526}
+  - component: {fileID: 114000844016179298}
   m_Layer: 0
   m_Name: Sparks
   m_TagString: Untagged
@@ -93,7 +97,7 @@ Transform:
   m_GameObject: {fileID: 1338060998370540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5000}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4774232442781620}
   - {fileID: 4895238437643352}
@@ -505,7 +509,7 @@ Animation:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1338060998370540}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 64191364c30de7248bed7e71771f93e4, type: 2}
   m_Animations:
@@ -514,6 +518,18 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114000844016179298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715276113683840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e0c734c90487d449ab76b0e29260b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 50
 --- !u!114 &114114501948967038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -526,6 +542,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
+--- !u!114 &114513410072724284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1675713215101348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e0c734c90487d449ab76b0e29260b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 50
+--- !u!114 &114575022947622964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1083007676249282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e0c734c90487d449ab76b0e29260b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 50
+--- !u!114 &114582600116269452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1338060998370540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bae4fa0377c49a48890190b78db43ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 8300000, guid: 39455fb505320424a8f302690b0f0cbd, type: 3}
 --- !u!114 &114663605324658272
 MonoBehaviour:
   m_ObjectHideFlags: 1
