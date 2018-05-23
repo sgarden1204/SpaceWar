@@ -4210,6 +4210,8 @@ GameObject:
   - component: {fileID: 1175264624}
   - component: {fileID: 1175264623}
   - component: {fileID: 1175264627}
+  - component: {fileID: 1175264628}
+  - component: {fileID: 1175264629}
   m_Layer: 0
   m_Name: BackCamera
   m_TagString: MainCamera
@@ -4286,15 +4288,47 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1175264622}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9290ae54b5b9229479401c4ed77a4bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerPos: {fileID: 1719488497}
-  yPos: 3
+  yPos: 2
   xPos: 0
   zPos: 6
+--- !u!114 &1175264628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175264622}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76806479d916a64aa03f8e3eba7912f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1719488497}
+  distance: 15
+  height: 5
+  rotationDamping: 2
+  heightDamping: 2
+--- !u!114 &1175264629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175264622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6def29a8e2cac344ae116d1020f53fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1719488497}
+  distance: {x: 0, y: 2, z: -10}
+  distanceDamp: 10
+  rotationDamp: 10
+  velocity: {x: 1, y: 1, z: 1}
 --- !u!1 &1235552028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6666,10 +6700,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb18695adc5ebeb4a93b95d8a4ad7834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shield: {fileID: 2085627562}
+  damage: 2
   moveSpeed: 10
   rotSpeed: 120
-  jumpSpeed: 5
-  gravity: 20
+  jumpSpeed: 10
+  gravity: 40
+  highSpeed: 5
 --- !u!114 &1719488495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6705,7 +6742,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1719488491}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d981dc6585df54541b6ccfeb933b8360, type: 3}
   m_Name: 
@@ -6713,6 +6750,7 @@ MonoBehaviour:
   shield: {fileID: 2085627562}
   damage: 2
   moveSpeed: 10
+  rotPower: 5
   highSpeed: 5
 --- !u!82 &1719488500
 AudioSource:
@@ -6794,6 +6832,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1719488501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1719488491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d68dda85c5a7d54e814ae94cfdf6f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 50
+  turnSpeed: 60
 --- !u!1001 &1737229077
 Prefab:
   m_ObjectHideFlags: 0
@@ -7604,10 +7655,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb18695adc5ebeb4a93b95d8a4ad7834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shield: {fileID: 2085627562}
+  damage: 2
   moveSpeed: 10
   rotSpeed: 120
   jumpSpeed: 5
   gravity: 20
+  highSpeed: 5
 --- !u!82 &1990627657
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8119,9 +8173,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 200
+  m_MaxValue: 1000
   m_WholeNumbers: 1
-  m_Value: 200
+  m_Value: 1000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
