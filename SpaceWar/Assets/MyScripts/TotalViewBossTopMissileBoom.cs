@@ -19,7 +19,7 @@ public class TotalViewBossTopMissileBoom : MonoBehaviour
     {
         if (TopMidFire != null)
         {
-            if (Vector3.Distance(this.transform.position, TopMidFire.transform.position) >= 50.0f)
+            if (Vector3.Distance(this.transform.position, TopMidFire.transform.position) >= 100.0f)
             {
                 Destroy(this.gameObject);
             }

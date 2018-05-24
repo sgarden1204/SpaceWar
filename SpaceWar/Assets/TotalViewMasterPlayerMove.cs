@@ -6,6 +6,7 @@ public class TotalViewMasterPlayerMove : MonoBehaviour {
 
     [SerializeField] float movementSpeed = 50.0f;
     [SerializeField] float turnSpeed = 60.0f;
+    [SerializeField] float rotationSpeed = 1.0f;
 
     Transform playerPos;
 
@@ -24,8 +25,8 @@ public class TotalViewMasterPlayerMove : MonoBehaviour {
     void Turn()
     {
         float yaw = turnSpeed * Time.deltaTime * Input.GetAxis("Horizontal");
-        float pitch = turnSpeed * Time.deltaTime * Input.GetAxis("Pitch");
-        float roll = turnSpeed * Time.deltaTime * Input.GetAxis("Roll");
+        float pitch = turnSpeed * Time.deltaTime * Input.GetAxis("Pitch") * rotationSpeed;
+        float roll = turnSpeed * Time.deltaTime * Input.GetAxis("Roll") * rotationSpeed;
 
         playerPos.Rotate(-pitch, yaw, -roll);
     }
