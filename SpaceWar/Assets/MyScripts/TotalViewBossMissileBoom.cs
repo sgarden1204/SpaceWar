@@ -22,7 +22,7 @@ public class TotalViewBossMissileBoom : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if (Vector3.Distance(this.transform.position, topLeftFire.transform.position) >= 100.0f)
+        if (Vector3.Distance(this.transform.position, topLeftFire.transform.position) >= 300.0f)
         {
             Destroy(this.gameObject);
         }

@@ -9,6 +9,10 @@ public class Stage4Manager : MonoBehaviour
     public GameObject[] deleteSideBoss = new GameObject[6];
     //public GameObject[] deleteBackBoss = new GameObject[3];
 
+    public GameObject leftBGS;
+    public GameObject bottomBGS;
+    public GameObject rightBGS;
+
     public Camera backCamera;
     public Camera topCamera;
     public Camera sideCamera;
@@ -69,6 +73,10 @@ public class Stage4Manager : MonoBehaviour
         topBoss.SetActive(false);
         sideBoss.SetActive(false);
         backBoss.SetActive(true);
+
+        leftBGS.SetActive(true);
+        rightBGS.SetActive(true);
+        bottomBGS.SetActive(true);
 
         if (AudioManager.Instance() != null)
         {
@@ -158,6 +166,10 @@ public class Stage4Manager : MonoBehaviour
             sideBoss.SetActive(false);
             backBoss.SetActive(true);
 
+            leftBGS.SetActive(true);
+            rightBGS.SetActive(true);
+            bottomBGS.SetActive(true);
+
             changeText.text = "BACK";
             changeText.color = Color.red;
             state = State.Back;
@@ -179,6 +191,10 @@ public class Stage4Manager : MonoBehaviour
             topBoss.SetActive(true);
             sideBoss.SetActive(false);
             backBoss.SetActive(false);
+
+            leftBGS.SetActive(false);
+            rightBGS.SetActive(false);
+            bottomBGS.SetActive(false);
 
             changeText.text = "TOP";
             changeText.color = Color.blue;
@@ -202,6 +218,10 @@ public class Stage4Manager : MonoBehaviour
             topBoss.SetActive(false);
             sideBoss.SetActive(true);
             backBoss.SetActive(false);
+
+            //leftBGS.SetActive(false);
+            rightBGS.SetActive(false);
+            bottomBGS.SetActive(false);
 
             changeText.text = "SIDE";
             changeText.color = Color.yellow;

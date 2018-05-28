@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 136072945077558434}
   - component: {fileID: 114811218333719818}
   - component: {fileID: 114654812749328970}
+  - component: {fileID: 114644641191484412}
   m_Layer: 0
   m_Name: TBossSideEnemyLaserBeam
   m_TagString: EnemyBullet
@@ -104,6 +105,17 @@ MonoBehaviour:
   m_lineColor: {r: 1, g: 0.9724139, b: 0, a: 1}
   m_lineWidth: 10
   m_lightSaberFactor: 0.584
+--- !u!114 &114644641191484412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733406254506786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39840075e146a5c46a6730e214d2ada5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114654812749328970
 MonoBehaviour:
   m_ObjectHideFlags: 1

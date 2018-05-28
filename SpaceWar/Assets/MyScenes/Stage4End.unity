@@ -2258,6 +2258,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   shield: {fileID: 0}
+  hitSpark: {fileID: 0}
+  itemCollect: {fileID: 0}
+  playerDestroy: {fileID: 0}
+  sparkCilp: {fileID: 0}
+  playerHitClip: {fileID: 0}
+  MineExplosion: {fileID: 0}
+  shieldCilp: {fileID: 0}
+  lCClip: {fileID: 0}
+  scoreClip: {fileID: 0}
+  powerUpClip: {fileID: 0}
 --- !u!82 &2109642766
 AudioSource:
   m_ObjectHideFlags: 0
