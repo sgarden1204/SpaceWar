@@ -10,6 +10,15 @@ public class TotalViewPlayerSideMove : MonoBehaviour
     public int damage = 2;
     public float moveSpeed = 10.0f;
 
+    public AudioClip ziziziClip;
+    public AudioClip brokenShield;
+    public AudioClip destroyClip;
+
+    public GameObject playerDestroy;
+    public GameObject playerSpark;
+
+    public Text captured;
+
     CharacterController controller;
     Vector3 moveVector;
 
@@ -64,6 +73,39 @@ public class TotalViewPlayerSideMove : MonoBehaviour
         }
 
         controller.Move(moveVector * Time.deltaTime);
+
+        if(this.transform.position.z <= 74.0f)
+        {
+            GetComponent<AudioSource>().PlayOneShot(ziziziClip);
+            Instantiate(playerSpark, this.transform.position, this.transform.rotation);
+        }
+
+        if(this.transform.position.y <= -11.0f)
+        {
+            captured.gameObject.SetActive(true);
+            GetComponent<AudioSource>().PlayOneShot(brokenShield);
+            EZCameraShake.CameraShaker.Instance.ShakeOnce(3.0f, 3.0f, 1.0f, 1.0f);
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 7.0f, this.transform.position.z);
+            Invoke("Sec", 3.0f);
+        }
+
+        if(this.transform.position.y >= 6.0f)
+        {
+            captured.gameObject.SetActive(true);
+            GetComponent<AudioSource>().PlayOneShot(brokenShield);
+            EZCameraShake.CameraShaker.Instance.ShakeOnce(3.0f, 3.0f, 1.0f, 1.0f);
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 7.0f, this.transform.position.z);
+            Invoke("Sec", 3.0f);
+        }
+
+        if(this.transform.position.z >= 100.0f)
+        {
+            captured.gameObject.SetActive(true);
+            GetComponent<AudioSource>().PlayOneShot(brokenShield);
+            EZCameraShake.CameraShaker.Instance.ShakeOnce(3.0f, 3.0f, 1.0f, 1.0f);
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 10.0f);
+            Invoke("Sec", 3.0f);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -74,9 +116,34 @@ public class TotalViewPlayerSideMove : MonoBehaviour
 
             if (shield.value <= 0)
             {
-                ScoreManager.Instance().ScoreSave();
-                SceneManager.LoadScene("Result");
+                GetComponent<AudioSource>().PlayOneShot(destroyClip);
+                Instantiate(playerDestroy, this.transform.position, this.transform.rotation);
+                Invoke("GameOver", 2.0f);
             }
         }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "EnemyBullet")
+        {
+            GetComponent<AudioSource>().PlayOneShot(ziziziClip);
+            Instantiate(playerSpark, this.transform.position, this.transform.rotation);
+        }
+    }
+
+    public void GameOver()
+    {
+        if (ScoreManager.Instance() != null)
+        {
+            ScoreManager.Instance().ScoreSave();
+        }
+
+        SceneManager.LoadScene("Result");
+    }
+
+    public void Sec()
+    {
+        captured.gameObject.SetActive(false);
     }
 }

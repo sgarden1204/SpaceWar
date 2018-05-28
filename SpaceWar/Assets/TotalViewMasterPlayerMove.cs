@@ -30,6 +30,10 @@ public class TotalViewMasterPlayerMove : MonoBehaviour {
         Thrust();
         ResetCase();
 
+        if(Input.GetKeyUp(KeyCode.Alpha9))
+        {
+            shield.value -= 9999.0f;
+        }
 	}
 
     void Turn()
@@ -105,14 +109,15 @@ public class TotalViewMasterPlayerMove : MonoBehaviour {
     {
         if (other.tag == "EnemyBullet")
         {
-            shield.value -= 100.0f;
+            shield.value -= 1.0f;
             GetComponent<AudioSource>().PlayOneShot(brokenShield);
             EZCameraShake.CameraShaker.Instance.ShakeOnce(2.0f, 2.0f, 1.0f, 1.0f);
 
             if (shield.value <= 0)
             {
+                GetComponent<AudioSource>().PlayOneShot(destroyClip);
                 Instantiate(playerDestroy, this.transform.position, this.transform.rotation);
-                Invoke("GameOver", 2.5f);
+                Invoke("GameOver", 2.0f);
             }
         }
     }

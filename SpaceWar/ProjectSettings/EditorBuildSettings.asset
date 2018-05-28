@@ -44,3 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyScenes/Stage4.unity
     guid: c743546c41d5f5241833ad5f573f5ea5
+  - enabled: 1
+    path: Assets/MyScenes/MissionComplete.unity
+    guid: 4bdebdbc278f16847957d6542e98614c

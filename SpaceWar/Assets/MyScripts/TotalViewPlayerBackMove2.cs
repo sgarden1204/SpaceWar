@@ -86,15 +86,15 @@ public class TotalViewPlayerBackMove2 : MonoBehaviour
         {
             shield.value -= damage;
 
-            if(shield.value <= 0)
-            {
-                if(ScoreManager.Instance() != null)
-                {
-                    ScoreManager.Instance().ScoreSave();
-                }
+            //if(shield.value <= 0)
+            //{
+            //    if(ScoreManager.Instance() != null)
+            //    {
+            //        ScoreManager.Instance().ScoreSave();
+            //    }
 
-                SceneManager.LoadScene("Result");
-            }
+            //    SceneManager.LoadScene("Result");
+            //}
         }
     }
 }

@@ -72,14 +72,14 @@ public class TotalViewPlayerMove : MonoBehaviour {
         {
             shield.value -= damage;
 
-            if (shield.value <= 0)
-            {
-                if (ScoreManager.Instance() != null)
-                {
-                    ScoreManager.Instance().ScoreSave();
-                }
-                SceneManager.LoadScene("Result");
-            }
+            //if (shield.value <= 0)
+            //{
+            //    if (ScoreManager.Instance() != null)
+            //    {
+            //        ScoreManager.Instance().ScoreSave();
+            //    }
+            //    SceneManager.LoadScene("Result");
+            //}
         }
     }
 }

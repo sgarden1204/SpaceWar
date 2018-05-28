@@ -10,6 +10,13 @@ public class TotalViewPlayerTopMove : MonoBehaviour
     public int damage = 2;
     public float moveSpeed = 10.0f;
 
+    public AudioClip ziziziClip;
+    public AudioClip brokenShield;
+    public AudioClip destroyClip;
+
+    public GameObject playerDestroy;
+    public GameObject playerSpark;
+
     CharacterController controller;
     Vector3 moveVector;
 
@@ -64,6 +71,12 @@ public class TotalViewPlayerTopMove : MonoBehaviour
         }
 
         controller.Move(moveVector * Time.deltaTime);
+
+        if(this.transform.position.x <= -30.0f || this.transform.position.x >= 30.0f || this.transform.position.z <= 65.0f || this.transform.position.z >= 83.0f)
+        {
+            GetComponent<AudioSource>().PlayOneShot(ziziziClip);
+            Instantiate(playerSpark, this.transform.position, this.transform.rotation);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -71,12 +84,25 @@ public class TotalViewPlayerTopMove : MonoBehaviour
         if (other.tag == "EnemyBullet")
         {
             shield.value -= damage;
+            //GetComponent<AudioSource>().PlayOneShot(brokenShield);
+            //EZCameraShake.CameraShaker.Instance.ShakeOnce(2.0f, 2.0f, 1.0f, 1.0f);
 
             if (shield.value <= 0)
             {
-                ScoreManager.Instance().ScoreSave();
-                SceneManager.LoadScene("Result");
+                GetComponent<AudioSource>().PlayOneShot(destroyClip);
+                Instantiate(playerDestroy, this.transform.position, this.transform.rotation);
+                Invoke("GameOver", 2.0f);
             }
         }
+    }
+
+    public void GameOver()
+    {
+        if (ScoreManager.Instance() != null)
+        {
+            ScoreManager.Instance().ScoreSave();
+        }
+
+        SceneManager.LoadScene("Result");
     }
 }

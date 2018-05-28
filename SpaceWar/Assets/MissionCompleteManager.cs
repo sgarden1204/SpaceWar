@@ -17,6 +17,9 @@ public class MissionCompleteManager : MonoBehaviour {
     public Image showAITextImg;
     public Text showAIText;
 
+    public AudioClip victoty;
+    public AudioClip missionClear;
+
     private int callCount;
 
 	// Use this for initialization
@@ -36,6 +39,7 @@ public class MissionCompleteManager : MonoBehaviour {
         switch(callCount)
         {
             case 1:
+                GetComponent<AudioSource>().PlayOneShot(missionClear);
                 missionText.gameObject.SetActive(true);
                 missionText.text = "M";
                 missionText.color = Color.red;
@@ -108,6 +112,7 @@ public class MissionCompleteManager : MonoBehaviour {
                 break;
 
             case 18:
+                
                 yourRankText.gameObject.SetActive(true);
                 //Your Rank
                 break;
@@ -151,6 +156,7 @@ public class MissionCompleteManager : MonoBehaviour {
 
             case 24:
                 showAIText.gameObject.SetActive(true);
+                GetComponent<AudioSource>().PlayOneShot(victoty);
                 //Show AI Text
                 break;
 
@@ -163,5 +169,15 @@ public class MissionCompleteManager : MonoBehaviour {
                 CancelInvoke();
                 break;
         }
+    }
+
+    public void ReturnTitle()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+    public void NextStage()
+    {
+        SceneManager.LoadScene("Stage3");
     }
 }
