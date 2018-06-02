@@ -24,7 +24,9 @@ public class FirstPersonCamera : MonoBehaviour {
 
         this.transform.position = targetPlayerPos.transform.position;
         this.transform.rotation = targetPlayerPos.transform.rotation;
-        masterCamera.transform.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+
+        masterCamera.transform.position = Vector3.zero;
+        masterCamera.transform.eulerAngles = Vector3.zero;
 
         //this.transform.position = new Vector3(targetPlayerPos.transform.position.x, targetPlayerPos.transform.position.y + 5.0f, targetPlayerPos.transform.position.z - 3.0f);
         this.transform.position = new Vector3(targetPlayerPos.transform.position.x, targetPlayerPos.transform.position.y, targetPlayerPos.transform.position.z);

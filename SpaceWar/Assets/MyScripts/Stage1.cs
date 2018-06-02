@@ -17,7 +17,7 @@ public class Stage1 : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "PlayerPos")
         {
             ScoreManager.Instance().ScoreSave();
             NextScene();
@@ -26,6 +26,6 @@ public class Stage1 : MonoBehaviour {
 
     public void NextScene()
     {
-        SceneManager.LoadScene("Stage2");
+        SceneManager.LoadScene("Stage1Result");
     }
 }

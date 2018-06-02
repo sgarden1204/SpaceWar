@@ -28,6 +28,8 @@ public class PlayerBackViewMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        //EZCameraShake.CameraShaker.Instance.ShakeOnce(5.0f, 5.0f, 1.0f, 1.0f);
+
         float ver = Input.GetAxis("Vertical");
         float hor = Input.GetAxis("Horizontal");
         float amtRot = cameraRotSpeed * Time.deltaTime;
@@ -76,10 +78,10 @@ public class PlayerBackViewMove : MonoBehaviour {
             }
         }
 
-        if(other.tag == "NextStage")
-        {
-            SceneManager.LoadScene("Stage2");
-        }
+        //if(other.tag == "NextStage")
+        //{
+        //    SceneManager.LoadScene("Stage2");
+        //}
 
         //if(other.tag == "ResetWall")
         //{

@@ -131,4 +131,12 @@ public class UIManager : MonoBehaviour {
     {
         SceneManager.LoadScene("InfiniteMode");
     }
+
+    public void ReStartStage()
+    {
+        if(PlayerPrefs.GetString("Save") != null)
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetString("Save"));
+        }
+    }
 }

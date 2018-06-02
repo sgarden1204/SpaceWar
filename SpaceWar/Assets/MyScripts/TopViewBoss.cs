@@ -64,6 +64,6 @@ public class TopViewBoss : MonoBehaviour {
 
     public void DelayNextScene()
     {
-        SceneManager.LoadScene("Stage4Start");
+        SceneManager.LoadScene("Stage3Result");
     }
 }

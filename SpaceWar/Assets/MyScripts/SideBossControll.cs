@@ -71,6 +71,6 @@ public class SideBossControll : MonoBehaviour {
 
     public void DelayNextScene()
     {
-        SceneManager.LoadScene("MissionComplete");
+        SceneManager.LoadScene("Stage2Result");
     }
 }

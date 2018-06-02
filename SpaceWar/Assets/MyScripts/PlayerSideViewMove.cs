@@ -42,7 +42,7 @@ public class PlayerSideViewMove : MonoBehaviour {
             GetComponent<AudioSource>().PlayOneShot(sparkclip);
             //this.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
             Instantiate(spark, this.transform.position, this.transform.rotation);
-            //shield.value--;
+            shield.value--;
 
             if (shield.value <= 0)
             {

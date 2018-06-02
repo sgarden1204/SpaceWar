@@ -128,13 +128,13 @@ public class MissionCompleteManager : MonoBehaviour {
                 if(ScoreManager.Instance() != null)
                 {
                     int score = ScoreManager.score;
-                    yourScoreText.text = score.ToString("D8");
+                    showScoreText.text = score.ToString("D8");
                 }
 
                 else
                 {
                     int score = 263547;
-                    yourScoreText.text = score.ToString("D8");
+                    showScoreText.text = score.ToString("D8");
                 }
                 //Your Score
                 break;
@@ -179,5 +179,38 @@ public class MissionCompleteManager : MonoBehaviour {
     public void NextStage()
     {
         SceneManager.LoadScene("Stage3");
+    }
+
+    public void Stage1Save()
+    {
+        PlayerPrefs.SetString("Save", "Stage1Result");
+        SceneManager.LoadScene("Main");
+    }
+
+    public void Stage2Save()
+    {
+        PlayerPrefs.SetString("Save", "Stage2Result");
+        SceneManager.LoadScene("Main");
+    }
+
+    public void Stage3Save()
+    {
+        PlayerPrefs.SetString("Save", "Stage3Result");
+        SceneManager.LoadScene("Main");
+    }
+
+    public void NextStage2()
+    {
+        SceneManager.LoadScene("Stage2");
+    }
+
+    public void NextStage3()
+    {
+        SceneManager.LoadScene("Stage3");
+    }
+
+    public void NextStage4()
+    {
+        SceneManager.LoadScene("Stage4Start");
     }
 }

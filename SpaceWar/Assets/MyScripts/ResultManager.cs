@@ -56,7 +56,7 @@ public class ResultManager : MonoBehaviour {
 
     public void ResultYourRank()
     {
-        rankResultText.text = "A";
+        rankResultText.text = "A ★★★★☆";
 
         // switch() 로 점수에 따른 랭크 구분
     }

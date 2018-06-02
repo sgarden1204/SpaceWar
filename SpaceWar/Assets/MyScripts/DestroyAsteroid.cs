@@ -22,7 +22,7 @@ public class DestroyAsteroid : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(life);
+        //Debug.Log(life);
 
         if(other.tag == "PlayerMissile")
         {
@@ -32,7 +32,7 @@ public class DestroyAsteroid : MonoBehaviour {
             {
                 audioDestroy.Play();
 
-                Debug.Log("Hit Trigger!");
+                //Debug.Log("Hit Trigger!");
 
 
                 exp = Instantiate(explosion, transform.position, transform.rotation);

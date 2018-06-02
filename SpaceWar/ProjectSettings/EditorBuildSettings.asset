@@ -47,3 +47,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyScenes/MissionComplete.unity
     guid: 4bdebdbc278f16847957d6542e98614c
+  - enabled: 1
+    path: Assets/MyScenes/Stage1Result.unity
+    guid: 932d22d64d4df6b4cbba4d00d1ed0a8d
+  - enabled: 1
+    path: Assets/MyScenes/Stage2Result.unity
+    guid: f925ac2fb0b7ff64c903179d7d793159
+  - enabled: 1
+    path: Assets/MyScenes/Stage3Result.unity
+    guid: a25e448db85f42b45a323dd739a66ac5
